@@ -1,0 +1,58 @@
+
+# --------------------------------------------
+# Load the index.php first and foremost
+# --------------------------------------------
+
+DirectoryIndex index.php
+
+# --------------------------------------------
+# Deny direct access to @ or . prefixed files
+# --------------------------------------------
+
+<FilesMatch "^(\.|@)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# --------------------------------------------
+# Expires Caching
+# --------------------------------------------
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType image/jpg "access 1 year"
+	ExpiresByType image/jpeg "access 1 year"
+	ExpiresByType image/gif "access 1 year"
+	ExpiresByType image/png "access 1 year"
+	ExpiresByType text/css "access 1 month"
+	ExpiresByType text/html "access 1 month"
+	ExpiresByType application/pdf "access 1 month"
+	ExpiresByType text/x-javascript "access 1 month"
+	ExpiresByType application/x-shockwave-flash "access 1 month"
+	ExpiresByType image/x-icon "access 1 year"
+	ExpiresDefault "access 1 month"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+
+	# ----------------------------------------
+	# No directory listings anywhere
+	# ----------------------------------------
+	IndexIgnore *
+	# Options +FollowSymLinks All -Indexes
+
+	# ----------------------------------------
+	# Compress & Gzip JS/CSS as one
+	# ----------------------------------------
+	RewriteRule ^css/(.*\.css) 	minify/combine.php?type=css&files=$1 [QSA,L]
+	RewriteRule ^js/(.*\.js) 	minify/combine.php?type=javascript&files=$1 [QSA,L]
+
+	# ----------------------------------------
+	# Route all requests to our framework
+	# ----------------------------------------
+	RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+</IfModule>

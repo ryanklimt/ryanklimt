@@ -1,0 +1,24 @@
+/* TEAM */
+
+	Founder:	Ryan Klimt
+	Front-end:	Ryan Klimt
+	Back-end:	Ryan Klimt
+	Twitter:	@ryanklimt
+	Location:	Chicago, IL
+	
+
+/* SITE */
+
+	Design: 	Ryan Klimt
+	Developer:	Ryan Klimt
+	Web: 		http://rklimt.com
+	From: 		Illinois
+
+	Launched:	January 2014
+	IDE: 		Coda, Transmit, Photoshop
+	Built with:	WordPress, HTML5, CSS3, jQuery
+	
+	
+/* OTHER */
+
+	- Try hitting Alt on the 'About' page.
