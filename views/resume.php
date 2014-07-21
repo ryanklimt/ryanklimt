@@ -1,14 +1,14 @@
 <section id="content">
 	
 	<div id="resume">
-		<img src='assets/images/site/resume.png' alt="resume">
+		<img src='images/resume.png' alt="resume">
 		
 		<div class="intro">
 			<h2><span class="nobreak">Hello, my name is</span>
 			<br>Ryan Klimt</h2>
 			<p>I am a Web Designer and Developer.</p>
 			<p>Two words that best describe me are enthusiastic and passionate.  </p>
-			<a class="download-button" href="assets/pdf/Resume.pdf" target="_blank">Download Resume</a>
+			<a class="download-button" href="pdf/Resume.pdf" target="_blank">Download Resume</a>
 		</div>
 	</div>
 		
@@ -21,9 +21,9 @@
 		<div id="no-vacancies">
 			
 			<div class="vacancy-circles">
-				<div class="badge"><img class="developer" src='assets/images/site/developer.png' alt="Developer"></div>
-				<div class="badge"><img class="designer" src='assets/images/site/designer.png' alt="Designer"></div>
-				<div class="badge normad"><img class="misc" src='assets/images/site/misc.png' alt="Misc"></div>
+				<div class="badge"><img class="developer" src='images/developer.png' alt="Developer"></div>
+				<div class="badge"><img class="designer" src='images/designer.png' alt="Designer"></div>
+				<div class="badge normad"><img class="misc" src='images/misc.png' alt="Misc"></div>
 			</div>
 
 			<div class="vacancy skills hide-mobile">

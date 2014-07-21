@@ -193,7 +193,7 @@
 
 		// strip tabs & newlines of css
 		$pattern = str_split("\t\n\r\0\x0B");
-		//$contents = trim(str_replace($pattern, '', $contents));
+		$contents = trim(str_replace($pattern, '', $contents));
 
 		// Send compressed contents
 		if (isset($encoding) && $encoding != 'none')

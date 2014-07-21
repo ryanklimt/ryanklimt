@@ -9,13 +9,14 @@ $pages = array(
 );
 
 $path = explode("/", $_SERVER["REQUEST_URI"]);
+print_r($path);
 foreach($pages as $key => $value) {
-	if(strtolower($path[1]) == $key) {
+	if(strtolower($path[2]) == $key) {
 		$page = $key;
 		$title = $value;
 	}
 }
-if($path[1] == "") {
+if($path[2] == "") {
 	$page = "home";
 	$title = "Web Development";
 }
@@ -49,9 +50,9 @@ if(!isset($page)) {
 		<link rel="stylesheet" href="css/print.css" media="print">
 
 		<!-- FAVICON -->
-		<link rel="shortcut icon" type="image/x-icon" href="assets/images/site/favicon.ico" sizes="16x16 32x32">
-		<link rel="icon" type="image/x-icon" href="assets/images/site/favicon.ico" sizes="16x16 32x32">
-		<link rel="apple-touch-icon-precomposed" href="assets/images/site/apple-touch-icon-114x114-precomposed.png">
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16 32x32">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16 32x32">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-114x114-precomposed.png">
 		
 		<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
 		<meta name="description" content="An outstanding web developer specialising in beautiful website design and innovative development.">

@@ -13,7 +13,7 @@
 				<p>You can only make something amazing if you have the passion and belief in what you're doing.</p>
 			</header>
 			
-			<img src="assets/images/site/slide-passion.png" alt="Passion">
+			<img src="images/slide-passion.png" alt="Passion">
 		</div>
 		
 		<div id="creativity" class="slide">
@@ -22,7 +22,7 @@
 				<p>Being creative in your web design is what will set your website apart.</p>
 			</header>
 			
-			<img src="assets/images/site/slide-creativity.png" alt="Creativity">
+			<img src="images/slide-creativity.png" alt="Creativity">
 		</div>
 		
 		<div id="invention" class="slide">
@@ -31,9 +31,9 @@
 				<p>Using the power of invention to solve problems is just another part of web development.</p>
 			</header>
 			
-			<img class="lit" src="assets/images/site/slide-invention-lit.png" alt="Invention">
-			<img class="spark" src="assets/images/site/slide-invention-spark.png" alt="Invention">
-			<img class="out" src="assets/images/site/slide-invention.png" alt="Invention">
+			<img class="lit" src="images/slide-invention-lit.png" alt="Invention">
+			<img class="spark" src="images/slide-invention-spark.png" alt="Invention">
+			<img class="out" src="images/slide-invention.png" alt="Invention">
 		</div>
 		
 		<div id="design" class="slide">
@@ -42,7 +42,7 @@
 				<p>I design my websites to look and work beautifully. Simplicity is the key.</p>
 			</header>
 			
-			<img src="assets/images/site/slide-design.png" alt="Design">
+			<img src="images/slide-design.png" alt="Design">
 		</div>
 		
 		<div id="focus" class="slide">
@@ -51,8 +51,8 @@
 				<p>Complete focus and dedication is required to produce a beautiful and concise website.</p>
 			</header>
 			
-			<img class="open" src="assets/images/site/slide-focus.png" alt="Focus">
-			<img class="closed" src="assets/images/site/slide-focus-closed.png" alt="Focus">
+			<img class="open" src="images/slide-focus.png" alt="Focus">
+			<img class="closed" src="images/slide-focus-closed.png" alt="Focus">
 		</div>
 		
 		<div id="develop" class="slide">
@@ -61,9 +61,9 @@
 				<p>Whatever it takes, I'll bring your conception of a website to life.</p>
 			</header>
 			
-			<img class="cog1" src="assets/images/site/slide-develop-cog1.png" alt="Develop">
-			<img class="cog2" src="assets/images/site/slide-develop-cog2.png" alt="Develop">
-			<img class="cog3" src="assets/images/site/slide-develop-cog3.png" alt="Develop">
+			<img class="cog1" src="images/slide-develop-cog1.png" alt="Develop">
+			<img class="cog2" src="images/slide-develop-cog2.png" alt="Develop">
+			<img class="cog3" src="images/slide-develop-cog3.png" alt="Develop">
 		</div>
 		
 		<div id="inception" class="slide">
@@ -72,12 +72,12 @@
 				<p>This is where it all begins. With an idea. An idea that has the power to change things.</p>
 			</header>
 			
-			<img class="sapling" src="assets/images/site/slide-inception-sapling.png" alt="Inception">
-			<img class="head" src="assets/images/site/slide-inception.png" alt="Inception">
+			<img class="sapling" src="images/slide-inception-sapling.png" alt="Inception">
+			<img class="head" src="images/slide-inception.png" alt="Inception">
 		</div>
 		
-		<img class="responsive-spacer" src="assets/images/site/slideshow-spacer.png">
-		<img id="slideshow-mask" src="assets/images/site/slideshow-mask.png">
+		<img class="responsive-spacer" src="images/slideshow-spacer.png">
+		<img id="slideshow-mask" src="images/slideshow-mask.png">
 	</div>
 	
 	<!--COMPANY VALUES-->	
@@ -86,19 +86,19 @@
 		<div class="item">
 			<h2>Where I'm Based</h2>
 			<p>I'm based in the beautiful town of Gurnee, Illinois where I design websites for amazing clients worldwide.</p>
-			<img src="assets/images/site/where-were-based.png" alt="Tunbridge Wells in Kent" class="item-wwb">
+			<img src="images/where-were-based.png" alt="Tunbridge Wells in Kent" class="item-wwb">
 		</div>
 		
 		<div class="item">
 			<h2>What I Do</h2>
 			<p>I design beautiful, simple and highly functional websites using the latest and greatest technology. Check out my <a href='<?php echo $url; ?>work/'>latest work</a>.</p>
-			<img src="assets/images/site/what-we-do.png" alt="iOS &amp; Android" class="item-wwd">
+			<img src="images/what-we-do.png" alt="iOS &amp; Android" class="item-wwd">
 		</div>
 		
 		<div class="item">
 			<h2>My Passion</h2>
 			<p>I love what I do! I'm passionate about taking your web idea from inception and making them a reality that works on all devices.</p>
-			<img src="assets/images/site/our-passion.png" alt="iPad, iPhone &amp; Android Phone" class="item-op">
+			<img src="images/our-passion.png" alt="iPad, iPhone &amp; Android Phone" class="item-op">
 		</div>
 		
 	</div>

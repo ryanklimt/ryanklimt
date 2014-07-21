@@ -1,7 +1,7 @@
 <section id="content">
 	
 	<div id="about">
-		<img src="assets/images/site/about.png" alt="Trees">
+		<img src="images/about.png" alt="Trees">
 		<div class="intro">
 			<h2>Proud of my work</h2>
 			<p>My foundation is based solely on my love for and appreciation of the internet. I strongly believe that every website must create a wonderful user experience from start to finish, built with outstanding aesthetic design, beautifully entwined with an elegant, rock solid codebase.</p>
@@ -18,7 +18,7 @@
 			<div class="badge">RK</div>
 		
 			<div class="profile">
-				<img class="avatar" src="assets/images/site/ryan-klimt.jpg" alt="Ryan Klimt">
+				<img class="avatar" src="images/ryan-klimt.jpg" alt="Ryan Klimt">
 				<header>
 					<h3>Ryan Klimt</h3>
 					<h5>Founder &amp; Owner</h5>

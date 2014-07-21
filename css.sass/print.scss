@@ -106,7 +106,7 @@ a:hover,a:focus
 
 blockquote
 {
-	background:url(../images/site/blockquote-lsquo.png) left top no-repeat,url(../images/site/blockquote-rsquo.png) right bottom no-repeat;
+	background:url(../images/blockquote-lsquo.png) left top no-repeat,url(../images/blockquote-rsquo.png) right bottom no-repeat;
 	left:-55px;
 	position:relative;
 	margin-right:-55px;
@@ -158,7 +158,7 @@ ul
 
 ul li
 {
-	background:transparent url(../images/site/ul-li-bullet.png) left 4px no-repeat;
+	background:transparent url(../images/ul-li-bullet.png) left 4px no-repeat;
 	margin-bottom:0.344em;
 	padding-left:1.719em;
 }
@@ -219,7 +219,7 @@ ul li
 
 #content-secondary header h2
 {
-	background:transparent url(../images/site/html.jpg) left top repeat;
+	background:transparent url(../images/html.jpg) left top repeat;
 	display:inline-block;
 	padding:0 0.344em;
 }
@@ -273,7 +273,7 @@ ul li
 
 #content-secondary .profile:before,#content-secondary .vacancy:before
 {
-	background:transparent url(../images/site/profile-arrow.jpg) center no-repeat;
+	background:transparent url(../images/profile-arrow.jpg) center no-repeat;
 	content:"";
 	display:block;
 	height:17px;
@@ -372,7 +372,7 @@ ul li
 
 #slideshow.loading
 {
-	background:transparent url(../images/site/loader.gif) center 260px no-repeat;
+	background:transparent url(../images/loader.gif) center 260px no-repeat;
 }
 
 #slideshow header
@@ -712,7 +712,7 @@ ul li
 
 .app .iphone
 {
-	background:transparent url(../images/site/iphone.jpg) center top no-repeat;
+	background:transparent url(../images/iphone.jpg) center top no-repeat;
 	-moz-background-size:100% auto;
 	-webkit-background-size:100% auto;
 	-o-background-size:100% auto;
@@ -740,7 +740,7 @@ ul li
 
 .app .ipad
 {
-	background:transparent url(../images/site/ipad.jpg) center top no-repeat;
+	background:transparent url(../images/ipad.jpg) center top no-repeat;
 	-moz-background-size:100% auto;
 	-webkit-background-size:100% auto;
 	-o-background-size:100% auto;
@@ -842,7 +842,7 @@ ul li
 
 .app .app-features li,.app .app-stats li
 {
-	background-image:url(../images/site/work-sprite.png);
+	background-image:url(../images/work-sprite.png);
 	background-position:left -98px;
 	line-height:1.692em;
 }
@@ -1063,7 +1063,7 @@ div#contact-form textarea
 
 #social div:nth-child(2)
 {
-	background:url(../images/site/social-divider.png) left top repeat-y,url(../images/site/social-divider.png) right top repeat-y;
+	background:url(../images/social-divider.png) left top repeat-y,url(../images/social-divider.png) right top repeat-y;
 	width:27.333333%;
 	padding:0 3%;
 }
@@ -1081,7 +1081,7 @@ div#contact-form textarea
 
 #social .networks .twitter
 {
-	background:transparent url(../images/site/twitter-icon.png) left center no-repeat;
+	background:transparent url(../images/twitter-icon.png) left center no-repeat;
 	border-bottom:1px dashed rgba(0,0,0,0.2);
 }
 
@@ -1098,7 +1098,7 @@ div#contact-form textarea
 
 #social .networks .facebook
 {
-	background:transparent url(../images/site/facebook-icon.png) left center no-repeat;
+	background:transparent url(../images/facebook-icon.png) left center no-repeat;
 }
 
 #social .networks .facebook a
@@ -1200,7 +1200,7 @@ div#contact-form textarea
 
 #company-info
 {
-	background:transparent url(../images/site/ryanklimt-icon.png) left center no-repeat;
+	background:transparent url(../images/ryanklimt-icon.png) left center no-repeat;
 	float:left;
 	font-size:0.75em;
 	min-height:58px;
@@ -1285,7 +1285,7 @@ form ul.form-structure,.primary-nav ul,#categories ul,#comments ol
 
 .no-rgba .home .primary-nav ul li.home a,.no-rgba .about .primary-nav ul li.about a,.no-rgba .work .primary-nav ul li.work a,.no-rgba .blog .primary-nav ul li.blog a,.no-rgba .jobs .primary-nav ul li.jobs a,.no-rgba .contact .primary-nav ul li.contact a,.no-rgba .primary-nav ul li a:hover,.no-rgba #content-secondary .profile,.no-rgba #content-secondary .vacancy,.no-rgba #social
 {
-	background:transparent url(../images/site/html-ie.jpg) left top repeat;
+	background:transparent url(../images/html-ie.jpg) left top repeat;
 	border:1px solid #D7D4CE;
 }
 

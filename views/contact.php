@@ -1,7 +1,7 @@
 <section id="content">
 
 	<div id="contact">
-		<img src='assets/images/site/contact.png' alt="Envelopes">
+		<img src='images/contact.png' alt="Envelopes">
 		<div class="intro">
 				<h2>Drop me a line!<br>
 				I'd love to hear from you.</h2>
@@ -13,7 +13,7 @@
 	<div id="content-secondary">
 		<div id="location">
 			<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47166.64504644952!2d-87.943657!3d42.36564399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f8e01b2b811ed%3A0xdd57cb6f9dd18676!2sGurnee%2C+IL!5e0!3m2!1sen!2sus!4v1390578399215"></iframe>
-				<p><strong>Gurnee, Illinois</strong><br>United States</p>
+			<p><strong>Gurnee, Illinois</strong><br>United States</p>
 		</div>
 		<div id="contact-form">
 			<form action='contact/' id="cForm" novalidate="novalidate">
@@ -25,7 +25,7 @@
 					</li>
 					<li class="label-placeholders">
 						<label for="contact-email">Email</label>
-						<input id="contact-email" class="required email" type="text" name="contact_email" value="">
+						<input id="contact-email" class="required email" type="email" name="contact_email" value="">
 					</li>
 					<li class="label-placeholders">
 						<label for="contact-message">Your Message</label>
