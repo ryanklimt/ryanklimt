@@ -3,8 +3,6 @@ $(document).ready(function () {
 	fitText();
 	labelPlaceholders();
 	contactForm();
-	//commentForm();
-	//subscribeForm();
 	var homeLoopTimeout;
 	homeSlider(5000, 200);
 	if ($('html').hasClass('ie8') || $('html').hasClass('ie7')) {

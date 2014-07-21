@@ -1,4 +1,3 @@
-// retina.js, a high-resolution image swapper (http://retinajs.com), v0.0.2
 if (screen.width > 640) {
     (function () {
         function t(e) {
