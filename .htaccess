@@ -35,7 +35,7 @@ DirectoryIndex index.php
 
 <IfModule mod_rewrite.c>
 	RewriteEngine On
-	RewriteBase /
+	#RewriteBase /
 
 	# ----------------------------------------
 	# No directory listings anywhere

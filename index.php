@@ -8,10 +8,21 @@ $pages = array(
 	"contact" => "Contact",
 );
 
-print_r(explode("/", $_SERVER["REQUEST_URI"]));
-
-$page = "about";
-$title = "Who I Am";
+$path = explode("/", $_SERVER["REQUEST_URI"]);
+foreach($pages as $key => $value) {
+	if(strtolower($path[1]) == $key) {
+		$page = $key;
+		$title = $value;
+	}
+}
+if($path[1] == "") {
+	$page = "home";
+	$title = "Web Development";
+}
+if(!isset($page)) {
+	$page = "404";
+	$title = "404 Error";
+}
 
 ?>
 
@@ -74,7 +85,7 @@ $title = "Who I Am";
 			</nav>
 		</header>
 
-		<?php include('views/about.php'); ?>
+		<?php include('views/'.$page.'.php'); ?>
 
 		<!--SITE FOOTER-->
 		<footer id="site-footer">
@@ -91,7 +102,7 @@ $title = "Who I Am";
 					<li class="home"><a href=''>Home</a></li>
 					<li class="about"><a href='about/'>About</a></li>
 					<li class="work"><a href='work/'>Work</a></li>
-					<!--<li class="blog"><a href='<?php /*echo $url; */?>blog/'>Blog</a></li>-->
+					<!--<li class="blog"><a href='blog/'>Blog</a></li>-->
 					<li class="resume"><a href='resume/'>Resume</a></li>
 					<li class="contact"><a href='contact/'>Contact</a></li>
 				</ul>

@@ -1,11 +1,3 @@
-<?php 
-	$head = "../_head.php";
-	$foot = "../_foot.php";
-	$page = "work";
-	$title = "Ryan Klimt | My Work";
-	include($head);
-?>
-
 <section id="content">
 	
 	<div id="work">
@@ -110,7 +102,5 @@
 		</div>
 
 	</div>
-			
+
 </section>
-	
-<?php include($foot); ?>

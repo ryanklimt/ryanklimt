@@ -1,11 +1,3 @@
-<?php 
-	$head = "../_head.php";
-	$foot = "../_foot.php";
-	$page = "blog";
-	$title = "Ryan Klimt | Blog";
-	include($head);
-?>
-
 <section id="content">
 	
 	<div id="archive">
@@ -105,6 +97,5 @@
 				<li class="random-thoughts"><a href="#"><img src='assets/images/site/category-1-icon.png' alt="Category Icon">Random Thoughts</a></li>
 			</ul>		
 	</aside>
-</section>
 
-<?php include($foot); ?>
+</section>

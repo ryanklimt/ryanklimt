@@ -1,12 +1,5 @@
-<?php 
-	$head = "../_head.php";
-	$foot = "../_foot.php";
-	$page = "contact";
-	$title = "Ryan Klimt | Contact Me";
-	include($head);
-?>
-
 <section id="content">
+
 	<div id="contact">
 		<img src='assets/images/site/contact.png' alt="Envelopes">
 		<div class="intro">
@@ -62,7 +55,6 @@
 				<li class="youtube">Watch me on <a href="http://youtube.com/mrgamingcollege" target="_blank">YouTube</a></li>
 			</ul>
 		</div>
-	</div>	
-</section>
+	</div>
 
-<?php include($foot); ?>
+</section>

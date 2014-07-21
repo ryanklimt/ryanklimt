@@ -1,11 +1,3 @@
-<?php
-	$head = "_head.php";
-	$foot = "_foot.php";
-	$page = "home";
-	$title = "Ryan Klimt | Web Development";
-	include($head);
-?>
-
 <section id="content">
 	
 	<!--HEADLINE & SLIDESHOW-->	
@@ -132,5 +124,3 @@
 		</ul>
 	</div>
 </div>
-
-<?php include($foot); ?>
