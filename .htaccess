@@ -40,6 +40,9 @@ DirectoryIndex index.php
 	RewriteRule ^css/(.*\.css) 	minify/combine.php?type=css&files=$1 [QSA,L]
 	RewriteRule ^js/(.*\.js) 	minify/combine.php?type=javascript&files=$1 [QSA,L]
 
+	# ----------------------------------------
+	# Hide all index files within views
+	# ----------------------------------------
 	RewriteRule ^views/(.*\.php) index.php [L]
 
 	# ----------------------------------------
