@@ -6,15 +6,6 @@
 DirectoryIndex index.php
 
 # --------------------------------------------
-# Deny direct access to @ or . prefixed files
-# --------------------------------------------
-
-<FilesMatch "^(\.|@)">
-    Order allow,deny
-    Deny from all
-</FilesMatch>
-
-# --------------------------------------------
 # Expires Caching
 # --------------------------------------------
 
@@ -35,7 +26,7 @@ DirectoryIndex index.php
 
 <IfModule mod_rewrite.c>
 	RewriteEngine On
-	#RewriteBase /
+	RewriteBase /rklimt/
 
 	# ----------------------------------------
 	# No directory listings anywhere
@@ -49,10 +40,12 @@ DirectoryIndex index.php
 	RewriteRule ^css/(.*\.css) 	minify/combine.php?type=css&files=$1 [QSA,L]
 	RewriteRule ^js/(.*\.js) 	minify/combine.php?type=javascript&files=$1 [QSA,L]
 
+	RewriteRule ^views/(.*\.php) index.php [L]
+
 	# ----------------------------------------
 	# Route all requests to our framework
 	# ----------------------------------------
 	RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
+	RewriteRule . index.php [L]
 
 </IfModule>

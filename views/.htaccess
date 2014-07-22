@@ -1,5 +1,0 @@
-#Prevent User From Accessing these Files
-<FILES ~ "\.php$">
-	Order allow,deny
-	Deny from all
-</FILES>

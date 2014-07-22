@@ -6,24 +6,39 @@ $pages = array(
 	"work" => "My Work",
 	"resume" => "My Accomplishments",
 	"contact" => "Contact",
+	"404" => "404 Error",
 );
 
-$path = explode("/", $_SERVER["REQUEST_URI"]);
-print_r($path);
-foreach($pages as $key => $value) {
-	if(strtolower($path[2]) == $key) {
-		$page = $key;
-		$title = $value;
+function isPage($filepath = null) {
+	$filepath = 'views/' . $filepath . '.php';
+	return file_exists($filepath) && is_file($filepath);
+}
+
+function getValidRoute($path = array()) {
+	if (!$path) {
+		header('HTTP/1.1 404 Not Found');
+		header('Status: 404 Not Found');
+		return array('404');
+	} else {
+		$page = end($path);
+		if ($page && in_array($page{0}, array('@','_','.','-',))) {
+			array_pop($path);
+			return getValidRoute($path);
+		}
 	}
+	if ($path && !isPage(implode('/', $path))) {
+		array_pop($path);
+		return getValidRoute($path);
+	}
+	return $path;
 }
-if($path[2] == "") {
-	$page = "home";
-	$title = "Web Development";
-}
-if(!isset($page)) {
-	$page = "404";
-	$title = "404 Error";
-}
+
+$path = array_values(array_diff(explode('/', urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH))), explode('/', urldecode(parse_url($_SERVER['SCRIPT_NAME'], PHP_URL_PATH)))));
+$path = array_filter(array_map("strip_tags", $path));
+$path = filter_var_array($path, FILTER_SANITIZE_STRING);
+$page = empty($path) ? array('home') : getValidRoute($path);
+$page = $page[0];
+$title = $pages[$page];
 
 ?>
 
@@ -66,7 +81,7 @@ if(!isset($page)) {
 		
 	</head>
 		
-	<body class=<?php echo $page ?>>
+	<body class=<?php echo $page; ?>>
 		
 		<!--HEADER-->
 		<header id="site-header">
