@@ -1,132 +1,48 @@
 <?php
 
-$pages = array(
-	"home" => "Web Development",
-	"about" => "Who I Am",
-	"work" => "My Work",
-	"resume" => "My Accomplishments",
-	"contact" => "Contact",
-	"404" => "404 Error",
-);
+	foreach(glob("includes/*.php") as $filepath) {
+		include($filepath);
+	}
 
-function isPage($filepath = null) {
-	$filepath = 'views/' . $filepath . '.php';
-	return file_exists($filepath) && is_file($filepath);
-}
+	define('BASE_URL', $_SERVER['SERVER_NAME'] == 'localhost' ? 'http://localhost/rklimt/' : 'http://rklimt.com/');
+	define('DEFAULT_HOME', 'home');
 
-function getValidRoute($path = array()) {
-	if (!$path) {
-		header('HTTP/1.1 404 Not Found');
-		header('Status: 404 Not Found');
-		return array('404');
-	} else {
-		$page = end($path);
-		if ($page && in_array($page{0}, array('@','_','.','-',))) {
-			array_pop($path);
-			return getValidRoute($path);
+	function isPage($filepath = null) {
+		$filepath = 'views/' . $filepath . '.php';
+		return file_exists($filepath) && is_file($filepath);
+	}
+
+	function getValidRoute($_route = array()) {
+		if (!$_route) {
+			header('HTTP/1.1 404 Not Found');
+			header('Status: 404 Not Found');
+			return array('404');
+		} else {
+			$page = end($_route);
+			if ($page && in_array($page{0}, array('@','_','.','-',))) {
+				array_pop($_route);
+				return getValidRoute($_route);
+			}
 		}
+		if ($_route && !isPage(implode('/', $_route))) {
+			array_pop($_route);
+			return getValidRoute($_route);
+		}
+		return $_route;
 	}
-	if ($path && !isPage(implode('/', $path))) {
-		array_pop($path);
-		return getValidRoute($path);
+
+	function is_current_page($page = '', $strict = false) {
+		global $_view_path;
+		return !$strict && rtrim(substr($_view_path, 0, strlen($page) + 1), '/') == $page;
 	}
-	return $path;
-}
 
-$path = array_values(array_diff(explode('/', urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH))), explode('/', urldecode(parse_url($_SERVER['SCRIPT_NAME'], PHP_URL_PATH)))));
-$path = array_filter(array_map("strip_tags", $path));
-$path = filter_var_array($path, FILTER_SANITIZE_STRING);
-$page = empty($path) ? array('home') : getValidRoute($path);
-$page = $page[0];
-$title = $pages[$page];
+	$_route = array_values(array_diff(explode('/', urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH))), explode('/', urldecode(parse_url($_SERVER['SCRIPT_NAME'], PHP_URL_PATH)))));
+	$_route = filter_var_array(array_filter(array_map("strip_tags", $_route)), FILTER_SANITIZE_STRING);
+	$_view = $_route ? getValidRoute($_route) : array(DEFAULT_HOME);
+	$_view_path = $_view ? implode('/', $_view) : DEFAULT_HOME;
+	$_params = array_slice($_route, count($_view));
+	$_page = end($_view);
+	$_title = $seo[$_page];
 
+	include('layouts/inside.php');
 ?>
-
-<!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="no-js ie ie6" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html>
-<!--<![endif]-->
-	<head>
-		<!-- META -->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="robots" content="robots.txt">
-		<meta name="author" content="humans.txt">
-		
-		<!-- TITLE -->
-		<title>Ryan Klimt | <?php echo $title; ?></title>
-		<base href="<?php echo $_SERVER['SERVER_NAME'] == 'localhost' ? 'http://localhost/rklimt/' : 'http://rklimt.com/'; ?>">
-		
-		<!-- CSS -->
-		<link rel="stylesheet" href="css/screen.css" media="screen">
-		<link rel="stylesheet" href="css/print.css" media="print">
-
-		<!-- FAVICON -->
-		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16 32x32">
-		<link rel="icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16 32x32">
-		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-114x114-precomposed.png">
-		
-		<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
-		<meta name="description" content="An outstanding web developer specialising in beautiful website design and innovative development.">
-		<meta name="keywords" content="ryan klimt, web development, web developer, web designer, front end developer, back end developer, computer science, resume, klimt, rklimt, ryan klimt web developer, klimt web, klimt developer">
-		<meta property="og:type" content="blog">
-		<meta property="og:title" content="Ryan Klimt">
-		<meta property="og:url" content="">
-		<meta property="og:site_name" content="Ryan Klimt">
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@ryanklimt">
-		
-	</head>
-		
-	<body class=<?php echo $page; ?>>
-		
-		<!--HEADER-->
-		<header id="site-header">
-			
-			<h1><a href="">Ryan Klimt</a></h1>
-			
-			<!--PRIMARY NAVIGATION-->
-			<nav class="primary-nav">
-				<ul>
-					<li class="home"><a href=>Home</a></li>
-					<li class="about"><a href='about/'>About</a></li>
-					<li class="work"><a href='work/'>Work</a></li>
-					<!--<li class="blog"><a href='<?php /*echo $url; */?>blog/'>Blog</a></li>-->
-					<li class="resume"><a href='resume/'>Resume</a></li>
-					<li class="contact"><a href='contact/'>Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<?php include('views/'.$page.'.php'); ?>
-
-		<!--SITE FOOTER-->
-		<footer id="site-footer">
-			
-			<!--COPYRIGHT INFO-->
-			<p id="company-info">&copy; 2014 Ryan Klimt<br>
-				Gurnee, Illinois, <span>United States</span><br>
-				Phone: 847 912-2543 Email: <a href="mailto:ryanklimt@gmail.com.com">ryanklimt@gmail.com</a>
-			</p>
-			
-			<!--PRIMARY NAVIGATION-->
-			<nav class="primary-nav">
-				<ul>
-					<li class="home"><a href=''>Home</a></li>
-					<li class="about"><a href='about/'>About</a></li>
-					<li class="work"><a href='work/'>Work</a></li>
-					<!--<li class="blog"><a href='blog/'>Blog</a></li>-->
-					<li class="resume"><a href='resume/'>Resume</a></li>
-					<li class="contact"><a href='contact/'>Contact</a></li>
-				</ul>
-			</nav>
-		</footer>
-
-		<!--JS BEHAVIOURS-->
-		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script src="js/plugins.min.js,modernizr.min.js,retina.js,autosize.min.js,jquery.form.min.js,view.min.js,common.js"></script>
-	</body>
-</html>
