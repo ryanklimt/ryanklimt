@@ -66,7 +66,7 @@ function contactForm() {
 			$(contactForm).append('<input type="hidden" name="ajax_submit" value="true" />');
 			$(contactForm).removeClass('error');
 			$(form).fadeOut(300, function () {
-				$("#contact-form").append('<div id="processing"><img src="assets/images/site/loader.gif" alt="Processing..." width="32" height="32" /></div>');
+				$("#contact-form").append('<div id="processing"><img src="images/loader.gif" alt="Processing..." width="32" height="32" /></div>');
 				$(form).ajaxSubmit({
 					target: "#contact-form",
 					url: 'process/email.php',
