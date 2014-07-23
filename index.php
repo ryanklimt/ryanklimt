@@ -32,9 +32,9 @@
 		return $_route;
 	}
 
-	function is_current_page($page = '', $strict = true, $classes = array()) {
+	function is_current_page($page = null, $strict = true, $classes = array()) {
 		global $_view_path;
-		$inPath = !$strict && rtrim(substr($_view_path, 0, strlen($page) + 1), '/') == $page;
+		$inPathStart = !$strict && rtrim(substr($_view_path, 0, strlen($page) + 1), '/') == $page;
 		if($inPathStart || $page == $_view_path) {
 			return 'class="current '.implode(" ",$classes).'"';
 		}

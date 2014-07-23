@@ -2285,7 +2285,8 @@ body {
   color: #2d2d2d;
 }
 
-.home .primary-nav ul li.home a, .about .primary-nav ul li.about a, .work .primary-nav ul li.work a, .blog .primary-nav ul li.blog a, .resume .primary-nav ul li.resume a, .contact .primary-nav ul li.contact a, .primary-nav ul li a:hover {
+.primary-nav ul li.current a,
+.primary-nav ul li a:hover {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -2298,7 +2299,8 @@ body {
   margin: 0;
 }
 
-.no-rgba .home .primary-nav ul li.home a, .no-rgba .about .primary-nav ul li.about a, .no-rgba .work .primary-nav ul li.work a, .no-rgba .blog .primary-nav ul li.blog a, .no-rgba .resume .primary-nav ul li.resume a, .no-rgba .contact .primary-nav ul li.contact a, .no-rgba .primary-nav ul li a:hover {
+.no-rgba .primary-nav ul li.current a,
+.no-rgba .primary-nav ul li a:hover {
   background: transparent url(../images/html-ie.jpg) left top repeat;
   border: 1px solid #D7D4CE;
 }
@@ -2352,7 +2354,6 @@ body {
 }
 
 .about #content-secondary div.item {
-  /*width: 47.6%;*/
   width: 50%;
   min-width: 600px;
   float: none;
@@ -3530,9 +3531,6 @@ img.item-op {
   -o-background-size: 100% auto;
   background-size: 100% auto;
   float: left;
-  /*float: right;*/
-  /*margin: 0 2.73% 0 0;*/
-  /*width: 45.496%;*/
   width: 100%;
 }
 
@@ -3543,7 +3541,6 @@ img.item-op {
 }
 
 .app .ipad .mask {
-  /*margin-left: 12.4%;*/
   margin-left: 11.8%;
   overflow: hidden;
   position: relative;
@@ -3573,10 +3570,8 @@ img.item-op {
 }
 
 .app .app-details {
-  /*float: right;*/
   margin-right: 6.824%;
   padding-top: 2.75em;
-  /*width: 42.22%;*/
   float: left;
   width: 100%;
 }
@@ -3729,7 +3724,6 @@ img.item-op {
 
 #content-secondary #no-vacancies .vacancy {
   float: left;
-  /*margin: 0 auto;*/
   width: 35%;
   margin: 0 2.5%;
 }
@@ -4510,7 +4504,6 @@ abbr.dm {
   }
 
   #content-secondary .item, .about #content-secondary div.item {
-    /*border-bottom: 1px dashed #cbc9c5;*/
     margin: 0 0 2.75em 0;
     padding-bottom: 2.75em;
     width: 100%;
@@ -5005,7 +4998,6 @@ abbr.dm {
 
   ul li {
     background-image: url(../images/ul-li-bullet@2x.png);
-    /* background-size:  14px px; */
   }
 
   #content-secondary .profile:before, #content-secondary .vacancy:before {
