@@ -36,7 +36,7 @@
 		<?php include('header.php'); ?>
 
 		<section id="content">
-			<?php include(VIEW_PATH.$_page.'.php'); ?>
+			<?php include(VIEW_PATH.$_view_path.'.php'); ?>
 		</section>
 
 		<?php is_current_page('home') ? include('social.footer.php') : null; ?>

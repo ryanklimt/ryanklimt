@@ -1,5 +1,4 @@
 <?php
-
 	foreach(glob("includes/*.php") as $filepath) {
 		include($filepath);
 	}
