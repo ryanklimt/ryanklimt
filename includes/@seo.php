@@ -2,6 +2,7 @@
 	$seo = array(
 		"home" => "Web Development",
 		"about" => "Who I Am",
+		"about/test" => "BLAH",
 		"work" => "My Work",
 		"resume" => "My Accomplishments",
 		"contact" => "Contact",

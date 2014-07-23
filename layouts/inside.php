@@ -31,7 +31,7 @@
 		<meta name="twitter:site" content="@ryanklimt">
 	</head>
 		
-	<body class="<?php echo $_page; ?>">
+	<body class="<?php echo $_page_class; ?>">
 
 		<?php include('header.php'); ?>
 

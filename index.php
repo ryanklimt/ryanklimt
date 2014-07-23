@@ -32,9 +32,13 @@
 		return $_route;
 	}
 
-	function is_current_page($page = '') {
+	function is_current_page($page = '', $strict = true, $classes = array()) {
 		global $_view_path;
-		return rtrim(substr($_view_path, 0, strlen($page) + 1), '/') == $page;
+		$inPath = !$strict && rtrim(substr($_view_path, 0, strlen($page) + 1), '/') == $page;
+		if($inPathStart || $page == $_view_path) {
+			return 'class="current '.implode(" ",$classes).'"';
+		}
+		return false;
 	}
 
 	$_route = array_values(array_diff(explode('/', urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH))), explode('/', urldecode(parse_url($_SERVER['SCRIPT_NAME'], PHP_URL_PATH)))));
@@ -43,7 +47,8 @@
 	$_view_path = $_view ? implode('/', $_view) : DEFAULT_HOME;
 	$_params = array_slice($_route, count($_view));
 	$_page = end($_view);
-	$_title = $seo[$_page];
+	$_page_class = str_replace("/", "-",$_view_path);
+	$_title = $seo[$_view_path];
 
 	include(LAYOUT_PATH.'inside.php');
 ?>

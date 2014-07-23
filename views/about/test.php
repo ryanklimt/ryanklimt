@@ -1,1 +1,1 @@
-hello world
+<?php print_r($_params); ?>
