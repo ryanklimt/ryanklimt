@@ -1,4 +1,6 @@
 <?php
+	session_start();
+
 	foreach(glob("includes/*.php") as $filepath) {
 		include($filepath);
 	}
