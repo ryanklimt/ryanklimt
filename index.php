@@ -6,9 +6,11 @@
 
 	define('BASE_URL', $_SERVER['SERVER_NAME'] == 'localhost' ? 'http://localhost/rklimt/' : 'http://rklimt.com/');
 	define('DEFAULT_HOME', 'home');
+	define('VIEW_PATH', 'views/');
+	define('LAYOUT_PATH', 'layouts/');
 
 	function isPage($filepath = null) {
-		$filepath = 'views/' . $filepath . '.php';
+		$filepath = VIEW_PATH . $filepath . '.php';
 		return file_exists($filepath) && is_file($filepath);
 	}
 
@@ -31,9 +33,9 @@
 		return $_route;
 	}
 
-	function is_current_page($page = '', $strict = false) {
+	function is_current_page($page = '') {
 		global $_view_path;
-		return !$strict && rtrim(substr($_view_path, 0, strlen($page) + 1), '/') == $page;
+		return rtrim(substr($_view_path, 0, strlen($page) + 1), '/') == $page;
 	}
 
 	$_route = array_values(array_diff(explode('/', urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH))), explode('/', urldecode(parse_url($_SERVER['SCRIPT_NAME'], PHP_URL_PATH)))));
@@ -44,5 +46,5 @@
 	$_page = end($_view);
 	$_title = $seo[$_page];
 
-	include('layouts/inside.php');
+	include(LAYOUT_PATH.'inside.php');
 ?>

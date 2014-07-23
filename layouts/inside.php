@@ -31,15 +31,15 @@
 		<meta name="twitter:site" content="@ryanklimt">
 	</head>
 		
-	<body class=<?php echo $_page; ?>>
+	<body class="<?php echo $_page; ?>">
 
 		<?php include('header.php'); ?>
 
 		<section id="content">
-			<?php include('views/'.$_page.'.php'); ?>
+			<?php include(VIEW_PATH.$_page.'.php'); ?>
 		</section>
 
-		<?php is_current_page('home', false) ? include('social.footer.php') : null; ?>
+		<?php is_current_page('home') ? include('social.footer.php') : null; ?>
 
 		<?php include('footer.php'); ?>
 
