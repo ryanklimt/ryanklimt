@@ -1,0 +1,124 @@
+form ul.form-structure {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li {
+		background: none;
+		margin-bottom: 0;
+		padding: 0;
+		margin-bottom: 0.688em;
+		position: relative;
+	}
+}
+form.error label:not(.error) {
+	text-indent: -9999px;
+}
+label {
+	font-family: museo-sans-rounded,  "Helvetica Neue",  Verdana,  sans-serif;
+	font-weight: 500;
+	cursor: text;
+	display: block;
+	&.dim {
+		opacity: 0.25;
+	}
+}
+.js .label-placeholders label {
+	font-family: museo-sans-rounded,  "Helvetica Neue",  Verdana,  sans-serif;
+	font-weight: 300;
+	margin: 1px 2px;
+	padding: 0.688em;
+	position: absolute;
+	top: 0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	&.error {
+		color: #E69999;
+	}
+}
+input[type=text], input[type=email], textarea, input[type=submit] {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+	font-family: museo-sans-rounded,  "Helvetica Neue",  Verdana,  sans-serif;
+	font-weight: 300;
+	background: -webkit-gradient(linear,  50% 0%,  50% 100%,  color-stop(0%,  #fbfbfa),  color-stop(100%,  #fbfbfa));
+	background: -webkit-linear-gradient(#fbfbfa, #fbfbfa);
+	background: -moz-linear-gradient(#fbfbfa, #fbfbfa);
+	background: -o-linear-gradient(#fbfbfa, #fbfbfa);
+	background: -ms-linear-gradient(#fbfbfa, #fbfbfa);
+	background: linear-gradient(#fbfbfa, #fbfbfa);
+	background-color: #fbfbfa;
+	border: 1px solid #cbc9c5;
+	color: #2d2d2d;
+	font-size: 1em;
+	line-height: 1.375em;
+	outline: none;
+	padding: 0.688em;
+	resize: none;
+}
+input[type=submit] {
+	background: -webkit-gradient(linear,  50% 0%,  50% 100%,  color-stop(0%,  #848484),  color-stop(100%,  #848484));
+	background: -webkit-linear-gradient(top,  #848484, #848484);
+	background: -moz-linear-gradient(top,  #848484, #848484);
+	background: -o-linear-gradient(top,  #848484, #848484);
+	background: -ms-linear-gradient(top,  #848484, #848484);
+	background: linear-gradient(top,  #848484, #848484);
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	text-shadow: none;
+	background-color: #848484;
+	border: 1px solid #848484;
+	color: #FFF;
+	cursor: pointer;
+	display: block;
+	font-size: 1.125em;
+	padding: 0.611em 1.222em;
+	position: relative;
+	text-decoration: none;
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+	background: -webkit-gradient(linear,  50% 0%,  50% 100%,  color-stop(0%,  #ffffff),  color-stop(100%,  #ffffff));
+	background: -webkit-linear-gradient(#ffffff, #ffffff);
+	background: -moz-linear-gradient(#ffffff, #ffffff);
+	background: -o-linear-gradient(#ffffff, #ffffff);
+	background: -ms-linear-gradient(#ffffff, #ffffff);
+	background: linear-gradient(#ffffff, #ffffff);
+	-moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+	-o-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+input[type=text].error, input[type=email].error, textarea.error {
+	background: -webkit-gradient(linear,  50% 0%,  50% 100%,  color-stop(0%,  #f8dbdb),  color-stop(100%,  #f8dbdb));
+	background: -webkit-linear-gradient(#f8dbdb, #f8dbdb);
+	background: -moz-linear-gradient(#f8dbdb, #f8dbdb);
+	background: -o-linear-gradient(#f8dbdb, #f8dbdb);
+	background: -ms-linear-gradient(#f8dbdb, #f8dbdb);
+	background: linear-gradient(#f8dbdb, #f8dbdb);
+}
+input[type=submit]:hover {
+	background: -webkit-gradient(linear,  50% 0%,  50% 100%,  color-stop(0%,  #6b6b6b),  color-stop(100%,  #6b6b6b));
+	background: -webkit-linear-gradient(top,  #6b6b6b, #6b6b6b);
+	background: -moz-linear-gradient(top,  #6b6b6b, #6b6b6b);
+	background: -o-linear-gradient(top,  #6b6b6b, #6b6b6b);
+	background: -ms-linear-gradient(top,  #6b6b6b, #6b6b6b);
+	background: linear-gradient(top,  #6b6b6b, #6b6b6b);
+}
+input[type=submit]:active {
+	background: -webkit-gradient(linear,  50% 0%,  50% 100%,  color-stop(0%,  #515151),  color-stop(100%,  #515151));
+	background: -webkit-linear-gradient(top,  #515151, #515151);
+	background: -moz-linear-gradient(top,  #515151, #515151);
+	background: -o-linear-gradient(top,  #515151, #515151);
+	background: -ms-linear-gradient(top,  #515151, #515151);
+	background: linear-gradient(top,  #515151, #515151);
+}

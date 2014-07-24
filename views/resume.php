@@ -1,8 +1,7 @@
 <div id="resume">
 	<img src='images/resume.png' alt="resume">
 	<div class="intro">
-		<h2><span class="nobreak">Hello, my name is</span>
-		<br>Ryan Klimt</h2>
+		<h2>Hello, my name is<br>Ryan Klimt</h2>
 		<p>I am a Web Designer and Developer.</p>
 		<p>Two words that best describe me are enthusiastic and passionate.  </p>
 		<a class="download-button" href="pdf/Resume.pdf" target="_blank">Download Resume</a>

@@ -41,7 +41,8 @@
 .app .laptop img {
 	float: left;
 	position: relative;
-	width: 100%}
+	width: 100%;
+}
 .app .app-details {
 	margin-right: 6.824%;
 	padding-top: 2.75em;
@@ -60,7 +61,8 @@
 	float: left;
 	font-size: 0.813em;
 	margin-right: 4%;
-	width: 56%}
+	width: 56%;
+}
 .app .app-features ul, .app .app-stats ul {
 	margin-top: 0;
 }
@@ -71,7 +73,8 @@
 }
 .app .app-stats {
 	margin-right: 0;
-	width: 40%}
+	width: 40%;
+}
 .app .app-stats li {
 	background-position: left 2px;
 }
@@ -105,11 +108,13 @@
 		max-width: 500px;
 		overflow: auto;
 		position: relative;
-		width: 100%}
+		width: 100%;
+	}
 	.app .app-details {
 		margin-right: 0;
 		padding-top: 0;
-		width: 100%}
+		width: 100%;
+	}
 	.app .app-purchase .app-icon {
 		float: left;
 		width: 100px;
