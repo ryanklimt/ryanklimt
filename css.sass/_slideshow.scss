@@ -1,0 +1,686 @@
+#slideshow {
+	min-height: 582px;
+	overflow: hidden;
+	position: relative;
+}
+#slideshow.loading {
+	background: transparent url(../images/loader.gif) center 260px no-repeat;
+}
+#slideshow header {
+	width: 30%;
+	position: absolute;
+}
+#slideshow header p {
+	text-shadow: none;
+	border: 1px solid #fff200;
+	display: inline;
+	background-color: #fff200;
+}
+#slideshow .slide img {
+	display: block;
+	float: none;
+	margin: 40px 20%;
+	width: 60%;
+	position: absolute;
+}
+#slideshow .responsive-spacer {
+	float: left;
+	width: 100%}
+#slideshow #slideshow-mask {
+	display: block;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+#slideshow .slide {
+	opacity: 0;
+	position: absolute;
+	width: 100%}
+.ie7 #slideshow .slide {
+	position: relative;
+}
+#slideshow .slide.current {
+	opacity: 1;
+}
+#slideshow #passion header {
+	right: 20px;
+	top: 60px;
+	width: 26%}
+#slideshow #passion.animate header {
+	-moz-animation-name: passion-header;
+	-moz-animation-duration: 5s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 0.2s;
+	-moz-animation-time-function: ease;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-name: passion-header;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.2s;
+	-webkit-animation-time-function: ease;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-name: passion-header;
+	-ms-animation-duration: 5s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 0.2s;
+	-ms-animation-time-function: ease;
+	-ms-animation-fill-mode: forwards;
+	animation-name: passion-header;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-delay: 0.2s;
+	animation-time-function: ease;
+	animation-fill-mode: forwards;
+	top: -500px;
+}
+#slideshow #passion.animate img {
+	-moz-animation-name: passion;
+	-moz-animation-duration: 5s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 1s;
+	-webkit-animation-name: passion;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1s;
+	-ms-animation-name: passion;
+	-ms-animation-duration: 5s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 1s;
+	animation-name: passion;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+}
+#slideshow #creativity header {
+	left: 40px;
+	top: 80px;
+	width: 24%}
+#slideshow #creativity.animate header {
+	-moz-animation-name: creativity-header;
+	-moz-animation-duration: 6s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 0.2s;
+	-moz-animation-time-function: ease;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-name: creativity-header;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.2s;
+	-webkit-animation-time-function: ease;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-name: creativity-header;
+	-ms-animation-duration: 6s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 0.2s;
+	-ms-animation-time-function: ease;
+	-ms-animation-fill-mode: forwards;
+	animation-name: creativity-header;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-delay: 0.2s;
+	animation-time-function: ease;
+	animation-fill-mode: forwards;
+	top: -500px;
+}
+#slideshow #creativity.animate img {
+	-moz-animation-name: creativity;
+	-moz-animation-duration: 6s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 0.2s;
+	-moz-animation-time-function: ease;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-name: creativity;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.2s;
+	-webkit-animation-time-function: ease;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-name: creativity;
+	-ms-animation-duration: 6s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 0.2s;
+	-ms-animation-time-function: ease;
+	-ms-animation-fill-mode: forwards;
+	animation-name: creativity;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-delay: 0.2s;
+	animation-time-function: ease;
+	animation-fill-mode: forwards;
+	right: -1000px;
+}
+#slideshow #invention header {
+	left: 60px;
+	top: 350px;
+}
+#slideshow #invention img {
+	z-index: 1;
+}
+#slideshow #invention img.spark {
+	opacity: 0;
+	z-index: 2;
+}
+#slideshow #invention img.lit {
+	opacity: 1;
+	z-index: 3;
+}
+#slideshow #invention.animate header {
+	-moz-animation-name: invention-header;
+	-moz-animation-duration: 5s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 0.2s;
+	-moz-animation-time-function: ease;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-name: invention-header;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.2s;
+	-webkit-animation-time-function: ease;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-name: invention-header;
+	-ms-animation-duration: 5s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 0.2s;
+	-ms-animation-time-function: ease;
+	-ms-animation-fill-mode: forwards;
+	animation-name: invention-header;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-delay: 0.2s;
+	animation-time-function: ease;
+	animation-fill-mode: forwards;
+	top: 600px;
+}
+#slideshow #invention.animate img.spark {
+	-moz-animation-name: invention-spark;
+	-moz-animation-duration: 1.5s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 1s;
+	-webkit-animation-name: invention-spark;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1s;
+	-ms-animation-name: invention-spark;
+	-ms-animation-duration: 1.5s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 1s;
+	animation-name: invention-spark;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+}
+#slideshow #invention.animate img.lit {
+	-moz-animation-name: invention-lit;
+	-moz-animation-duration: 3.5s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 1.5s;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-name: invention-lit;
+	-webkit-animation-duration: 3.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1.5s;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-name: invention-lit;
+	-ms-animation-duration: 3.5s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 1.5s;
+	-ms-animation-fill-mode: forwards;
+	animation-name: invention-lit;
+	animation-duration: 3.5s;
+	animation-iteration-count: 1;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+#slideshow #design header {
+	left: 40px;
+	top: 200px;
+}
+#slideshow #design img {
+	-moz-transform-origin: 26.984% 99.823%;
+	-webkit-transform-origin: 26.984% 99.823%;
+	-ms-transform-origin: 26.984% 99.823%;
+	transform-origin: 26.984% 99.823%}
+#slideshow #design.animate header {
+	-moz-animation-name: design-header;
+	-moz-animation-duration: 6s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 0.2s;
+	-moz-animation-time-function: ease;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-name: design-header;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.2s;
+	-webkit-animation-time-function: ease;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-name: design-header;
+	-ms-animation-duration: 6s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 0.2s;
+	-ms-animation-time-function: ease;
+	-ms-animation-fill-mode: forwards;
+	animation-name: design-header;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-delay: 0.2s;
+	animation-time-function: ease;
+	animation-fill-mode: forwards;
+	top: -500px;
+}
+#slideshow #design.animate img {
+	-moz-animation-name: design;
+	-moz-animation-duration: 6s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 0.2s;
+	-moz-animation-timing-function: ease;
+	-webkit-animation-name: design;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.2s;
+	-webkit-animation-timing-function: ease;
+	-ms-animation-name: design;
+	-ms-animation-duration: 6s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 0.2s;
+	-ms-animation-timing-function: ease;
+	animation-name: design;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-delay: 0.2s;
+	animation-timing-function: ease;
+	right: -1000px;
+}
+#slideshow #focus header {
+	left: 40px;
+	top: 400px;
+}
+#slideshow #focus img.closed {
+	opacity: 0;
+}
+#slideshow #focus.animate header {
+	-moz-animation-name: focus-header;
+	-moz-animation-duration: 5s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 0.2s;
+	-moz-animation-time-function: ease;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-name: focus-header;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.2s;
+	-webkit-animation-time-function: ease;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-name: focus-header;
+	-ms-animation-duration: 5s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 0.2s;
+	-ms-animation-time-function: ease;
+	-moz-animation-fill-mode: forwards;
+	animation-name: focus-header;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-delay: 0.2s;
+	animation-time-function: ease;
+	top: 600px;
+}
+#slideshow #focus.animate img.open {
+	-moz-animation-name: focus-open;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 1s;
+	-webkit-animation-name: focus-open;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1s;
+	-ms-animation-name: focus-open;
+	-ms-animation-duration: 1s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 1s;
+	animation-name: focus-open;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+}
+#slideshow #focus.animate img.closed {
+	-moz-animation-name: focus-closed;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 1s;
+	-webkit-animation-name: focus-closed;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 1s;
+	-ms-animation-name: focus-closed;
+	-ms-animation-duration: 1s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 1s;
+	animation-name: focus-closed;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+}
+#slideshow #develop header {
+	right: 20px;
+	top: 200px;
+	width: 26%}
+#slideshow #develop.animate header {
+	-moz-animation-name: develop-header;
+	-moz-animation-duration: 6s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 0.2s;
+	-moz-animation-time-function: ease;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-name: develop-header;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.2s;
+	-webkit-animation-time-function: ease;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-name: develop-header;
+	-ms-animation-duration: 6s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 0.2s;
+	-ms-animation-time-function: ease;
+	-ms-animation-fill-mode: forwards;
+	animation-name: develop-header;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-delay: 0.2s;
+	animation-time-function: ease;
+	animation-fill-mode: forwards;
+	top: -500px;
+}
+#slideshow #develop.animate img {
+	-moz-animation-name: develop;
+	-moz-animation-duration: 6s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 0.2s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-name: develop;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.2s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-name: develop;
+	-ms-animation-duration: 6s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 0.2s;
+	-ms-animation-timing-function: ease;
+	-ms-animation-fill-mode: forwards;
+	animation-name: develop;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-delay: 0.2s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	left: -1000px;
+}
+#slideshow #develop.animate img.cog1 {
+	-moz-transform-origin: 63.492% 68.44%;
+	-webkit-transform-origin: 63.492% 68.44%;
+	-ms-transform-origin: 63.492% 68.44%;
+	transform-origin: 63.492% 68.44%}
+#slideshow #develop.animate img.cog2 {
+	-moz-transform-origin: 36.772% 52.482%;
+	-webkit-transform-origin: 36.772% 52.482%;
+	-ms-transform-origin: 36.772% 52.482%;
+	transform-origin: 36.772% 52.482%}
+#slideshow #develop.animate img.cog3 {
+	-moz-transform-origin: 60.847% 28.723%;
+	-webkit-transform-origin: 60.847% 28.723%;
+	-ms-transform-origin: 60.847% 28.723%;
+	transform-origin: 60.847% 28.723%}
+#slideshow #inception header {
+	right: 20px;
+	top: 200px;
+}
+#slideshow #inception img.head {
+	z-index: 1;
+}
+#slideshow #inception img.sapling {
+	z-index: 2;
+}
+#slideshow #inception.animate header {
+	-moz-animation-name: inception-header;
+	-moz-animation-duration: 5s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 0.2s;
+	-moz-animation-time-function: ease;
+	-webkit-animation-name: inception-header;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.2s;
+	-webkit-animation-time-function: ease;
+	-ms-animation-name: inception-header;
+	-ms-animation-duration: 5s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 0.2s;
+	-ms-animation-time-function: ease;
+	animation-name: inception-header;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-delay: 0.2s;
+	animation-time-function: ease;
+	top: 600px;
+}
+#slideshow #inception.animate img.sapling {
+	-moz-animation-name: inception;
+	-moz-animation-duration: 6s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-delay: 0.2s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-name: inception;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay: 0.2s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-name: inception;
+	-ms-animation-duration: 6s;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-delay: 0.2s;
+	-ms-animation-timing-function: ease;
+	-ms-animation-fill-mode: forwards;
+	animation-name: inception;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-delay: 0.2s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@media screen and (max-width: 1050px), (max-device-width: 1024px) {
+	#slideshow.loading {
+		background: transparent url(../images/loader.gif) center 160px no-repeat;
+	}
+	#slideshow #passion header {
+		top: 40px;
+	}
+	#slideshow #passion.animate header {
+		-moz-animation-name: passion-header-tablet;
+		-webkit-animation-name: passion-header-tablet;
+		-ms-animation-name: passion-header-tablet;
+		animation-name: passion-header-tablet;
+		width: 30%}
+	#slideshow #creativity header {
+		top: 40px;
+	}
+	#slideshow #creativity.animate header {
+		-moz-animation-name: creativity-header-tablet;
+		-webkit-animation-name: creativity-header-tablet;
+		-ms-animation-name: creativity-header-tablet;
+		animation-name: creativity-header-tablet;
+		width: 26%}
+	#slideshow #invention header {
+		top: 220px;
+	}
+	#slideshow #invention.animate header {
+		-moz-animation-name: invention-header-tablet;
+		-webkit-animation-name: invention-header-tablet;
+		-ms-animation-name: invention-header-tablet;
+		animation-name: invention-header-tablet;
+	}
+	#slideshow #design header {
+		top: 100px;
+	}
+	#slideshow #design.animate header {
+		-moz-animation-name: design-header-tablet;
+		-webkit-animation-name: design-header-tablet;
+		-ms-animation-name: design-header-tablet;
+		animation-name: design-header-tablet;
+		width: 24%}
+	#slideshow #focus header {
+		top: 260px;
+	}
+	#slideshow #focus.animate header {
+		-moz-animation-name: focus-header-tablet;
+		-webkit-animation-name: focus-header-tablet;
+		-ms-animation-name: focus-header-tablet;
+		animation-name: focus-header-tablet;
+	}
+	#slideshow #develop header {
+		top: 220px;
+	}
+	#slideshow #develop.animate header {
+		-moz-animation-name: develop-header-tablet;
+		-webkit-animation-name: develop-header-tablet;
+		-ms-animation-name: develop-header-tablet;
+		animation-name: develop-header-tablet;
+	}
+	#slideshow #inception header {
+		top: 180px;
+	}
+	#slideshow #inception.animate header {
+		-moz-animation-name: inception-header-tablet;
+		-webkit-animation-name: inception-header-tablet;
+		-ms-animation-name: inception-header-tablet;
+		animation-name: inception-header-tablet;
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 680px), (max-device-width: 480px) {
+	#slideshow header h2 {
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-o-border-radius: 4px;
+		-ms-border-radius: 4px;
+		-khtml-border-radius: 4px;
+		border-radius: 4px;
+		text-shadow: none;
+		background-color: #2d2d2d;
+		border: 0;
+		color: #FFF;
+		display: inline-block;
+		font-size: 1.385em;
+		padding: 0.082em 0.344em;
+		position: relative;
+	}
+	#slideshow header h2:before {
+		content: "";
+		border: 7px solid transparent;
+		border-top-color: #2d2d2d;
+		bottom: -14px;
+		position: absolute;
+		left: 15px;
+	}
+	#slideshow header p {
+		display: none;
+	}
+	#slideshow #slideshow-mask {
+		min-height: 178px;
+	}
+	#slideshow .slide img {
+		margin-bottom: 15px;
+		margin-top: 20px;
+	}
+	#slideshow #passion header {
+		right: 5px;
+		top: 20px;
+	}
+	#slideshow #passion.animate header {
+		-moz-animation-name: none;
+		-webkit-animation-name: none;
+		-ms-animation-name: none;
+		animation-name: none;
+		right: 5px;
+		top: 20px;
+	}
+	#slideshow #creativity header {
+		left: 5px;
+		top: 20px;
+	}
+	#slideshow #creativity.animate header {
+		-moz-animation-name: none;
+		-webkit-animation-name: none;
+		-ms-animation-name: none;
+		animation-name: none;
+		left: 5px;
+		top: 20px;
+	}
+	#slideshow #invention header {
+		left: 15px;
+		top: 100px;
+	}
+	#slideshow #invention.animate header {
+		-moz-animation-name: none;
+		-webkit-animation-name: none;
+		-ms-animation-name: none;
+		animation-name: none;
+		left: 15px;
+		top: 100px;
+	}
+	#slideshow #focus header {
+		left: 10px;
+		top: 140px;
+	}
+	#slideshow #focus.animate header {
+		-moz-animation-name: none;
+		-webkit-animation-name: none;
+		-ms-animation-name: none;
+		animation-name: none;
+		left: 10px;
+		top: 110px;
+	}
+	#slideshow #develop header {
+		left: 10px;
+		top: 20px;
+	}
+	#slideshow #develop.animate header {
+		-moz-animation-name: none;
+		-webkit-animation-name: none;
+		-ms-animation-name: none;
+		animation-name: none;
+		right: 10px;
+		top: 20px;
+	}
+	#slideshow #inception header {
+		right: 10px;
+		top: 20px;
+	}
+	#slideshow #inception.animate header {
+		-moz-animation-name: none;
+		-webkit-animation-name: none;
+		-ms-animation-name: none;
+		animation-name: none;
+		right: 10px;
+		top: 20px;
+	}
+	#slideshow #design header {
+		left: 20px;
+		top: 20px;
+	}
+	#slideshow #design.animate header {
+		-moz-animation-name: none;
+		-webkit-animation-name: none;
+		-ms-animation-name: none;
+		animation-name: none;
+		left: 20px;
+		top: 20px;
+	}
+}

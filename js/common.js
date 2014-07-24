@@ -10,8 +10,11 @@ $(document).ready(function () {
 		ieHomeSlider(5000)
 	}
 	var workLoopTimeout;
-	workSliders(4000, 300);
-	$('img').removeAttr('width height')
+	workSliders(4000, 200);
+	$('img').removeAttr('width height');
+	$(document).keydown(function(event){if(event.keyCode==18){$('.email-button').hide();$('.twitter-button').css('display','block');$('.team h2').html('Tweet me');}});
+	$(document).keyup(function(event){if(event.keyCode==18){$('.email-button').show();$('.twitter-button').hide();$('.team h2').html('Meet me');}});
+	$('textarea').autosize();
 });
 
 function fitText() {
@@ -31,18 +34,20 @@ function fitText() {
 function labelPlaceholders() {
 	$('.label-placeholders input[type=text], .label-placeholders input[type=password], .label-placeholders input[type=email], .label-placeholders textarea').each(function () {
 		if ($(this).val()) {
-			$(this).parent('li').find('label').hide()
+			$(this).parent('li').find('label').hide();
 		}
 	});
 	$('.label-placeholders input[type=text], .label-placeholders input[type=password], .label-placeholders input[type=email], .label-placeholders textarea').focusin(function () {
 		$(this).parent('li').find('label').addClass('dim');
+		$(this).parent('li').find('error');
 		$(this).keypress(function () {
-			$(this).parent('li').find('label').hide()
+			$(this).parent('li').find('label').hide();
 		})
 	});
 	$('.label-placeholders input[type=text], .label-placeholders input[type=password], .label-placeholders input[type=email], .label-placeholders textarea').focusout(function () {
 		if (!$(this).val()) {
-			$(this).parent('li').find('label').removeClass('dim').show()
+			$(this).parent('li').find('label').removeClass('dim').show();
+			$(this).siblings().find('label').hide();
 		}
 	})
 }
@@ -73,8 +78,8 @@ function contactForm() {
 					type: 'POST',
 					data: contactForm.serialize(),
 					success: function () {
+						$('#contact_form').remove();
 						$("#processing").remove();
-						$('#contact_form').html("<div id='message'></div>");
 					}
 				})
 			})
@@ -158,7 +163,7 @@ function ieHomeSliderLoop(interval) {
 }
 
 function workSliders(interval, speed) {
-	$('.iphone, .ipad, .iphoneV').each(function () {
+	$('.laptop').each(function () {
 		var length = $('.mask img', $(this)).length;
 		if (length > 1) {
 			var firstImg = $('.mask img:first', $(this)).clone().addClass('last');
@@ -194,8 +199,3 @@ function workSlidersLoop(e, interval, speed) {
 		})
 	}
 }
-
-$(document).keydown(function(event){if(event.keyCode==18){$('.email-button').hide();$('.twitter-button').css('display','block');$('.team h2').html('Tweet me');}});
-$(document).keyup(function(event){if(event.keyCode==18){$('.email-button').show();$('.twitter-button').hide();$('.team h2').html('Meet me');}});
-
-$('textarea').autosize();

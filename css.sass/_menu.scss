@@ -1,0 +1,87 @@
+.primary-nav {
+	float: right;
+	margin-top: 7px;
+}
+.primary-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.primary-nav ul li {
+	background: none;
+	padding: 0;
+	display: block;
+	float: left;
+	margin-bottom: 0;
+	margin-left: 0.313em;
+}
+.primary-nav ul li a {
+	-moz-transition-property: background-color;
+	-webkit-transition-property: background-color;
+	-o-transition-property: background-color;
+	transition-property: background-color;
+	-moz-transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: none;
+	font-size: 1.125em;
+	margin: 1px;
+	padding: 0.313em 0.625em;
+}
+.primary-nav ul li.current a,
+.primary-nav ul li a:active,
+.primary-nav ul li a:hover, {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.042);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	color: #2d2d2d;
+	margin: 0;
+}
+.no-rgba .primary-nav ul li.current a,
+.no-rgba .primary-nav ul li a:active,
+.no-rgba .primary-nav ul li a:hover {
+	background: transparent url(../images/html-ie.jpg) left top repeat;
+	border: 1px solid #D7D4CE;
+}
+
+@media screen and (max-width: 680px), (max-device-width: 480px) {
+	.primary-nav {
+		float: none;
+	}
+	.primary-nav ul {
+		clear: both;
+		padding-top: 1.375em;
+		text-align: center;
+	}
+	.primary-nav ul li {
+		display: inline;
+		float: none;
+		margin-left: 0.188em;
+	}
+	.primary-nav ul li a {
+		-moz-transition-property: background-color;
+		-webkit-transition-property: background-color;
+		-o-transition-property: background-color;
+		transition-property: background-color;
+		-moz-transition-duration: 0.2s;
+		-webkit-transition-duration: 0.2s;
+		-o-transition-duration: 0.2s;
+		transition-duration: 0.2s;
+		border: none;
+		font-size: 1em;
+		margin: 1px;
+		padding: 0.188em 0.313em;
+	}
+}

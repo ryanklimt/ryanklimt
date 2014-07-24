@@ -8,7 +8,7 @@
 </div>
 
 <div class="app">
-	<div class="ipad">
+	<div class="laptop">
 		<img class="responsive-spacer" src="images/laptop-spacer-top.png">
 		<div class="mask">
 			<img src="images/hidden-perception-01.jpg">
@@ -53,7 +53,7 @@
 </div>
 
 <div class="app">
-	<div class="ipad">
+	<div class="laptop">
 		<img class="responsive-spacer" src="images/laptop-spacer-top.png">
 		<div class="mask">
 			<img src="images/matt-morse-01.jpg">

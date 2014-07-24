@@ -1,0 +1,150 @@
+.app {
+	clear: both;
+	float: left;
+	margin-bottom: 2.75em;
+}
+.app:last-child {
+	margin-bottom: 0;
+}
+.app .laptop {
+	background: transparent url(../images/laptop.png) center top no-repeat;
+	-moz-background-size: 100% auto;
+	-webkit-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
+	float: left;
+	width:100%;
+}
+.app .laptop .responsive-spacer {
+	float: left;
+	margin-left: 11.8%;
+	width: 76.2%;
+}
+.app .laptop .mask {
+	margin-left: 11.8%;
+	overflow: hidden;
+	position: relative;
+	width: 76.2%;
+}
+.app .laptop .mask img {
+	display: none;
+}
+.app .laptop .mask img:first-child {
+	display: block;
+}
+.app .laptop .slide-container {
+	position: relative;
+}
+.app .laptop .slide-container img {
+	display: block;
+}
+.app .laptop img {
+	float: left;
+	position: relative;
+	width: 100%}
+.app .app-details {
+	margin-right: 6.824%;
+	padding-top: 2.75em;
+	float: left;
+	width:100%;
+}
+.app .app-description {
+	clear: both;
+}
+.app .app-points {
+	border-top: 1px dashed #cbc9c5;
+	padding-top: 1.375em;
+	margin-top: 0.688em;
+}
+.app .app-features, .app .app-stats {
+	float: left;
+	font-size: 0.813em;
+	margin-right: 4%;
+	width: 56%}
+.app .app-features ul, .app .app-stats ul {
+	margin-top: 0;
+}
+.app .app-features li, .app .app-stats li {
+	background-image: url(../images/work-sprite.png);
+	background-position: left -98px;
+	line-height: 1.692em;
+}
+.app .app-stats {
+	margin-right: 0;
+	width: 40%}
+.app .app-stats li {
+	background-position: left 2px;
+}
+
+@media screen and (max-width: 1050px), (max-device-width: 1024px) {
+	.app .app-features li {
+		background-position: left -68px;
+		padding-left: 1.719em;
+	}
+	.app .app-stats li {
+		background-position: left 2px;
+		padding-left: 1.719em;
+	}
+}
+
+@media screen and (max-width: 680px), (max-device-width: 480px) {
+	.app {
+		border-bottom: 1px dashed #cbc9c5;
+		clear: both;
+		float: left;
+		margin: 0 0 2.75em;
+	}
+	.app:last-child {
+		border-bottom: 0;
+		margin-bottom: 2.75em;
+	}
+	.app .laptop {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		max-width: 500px;
+		overflow: auto;
+		position: relative;
+		width: 100%}
+	.app .app-details {
+		margin-right: 0;
+		padding-top: 0;
+		width: 100%}
+	.app .app-purchase .app-icon {
+		float: left;
+		width: 100px;
+	}
+	.app .app-points {
+		border-top: none;
+		padding-top: 0;
+		margin-top: 0.688em;
+	}
+	.app .app-features, .app .app-stats {
+		font-size: 0.813em;
+	}
+	.app .app-features ul, .app .app-stats ul {
+		margin-top: 0;
+	}
+	.app .app-features li, .app .app-stats li {
+		background-position: left -56px;
+	}
+	.app .app-stats li {
+		background-position: left 3px;
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 5/4), (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+	.app .app-features li, .app .app-stats li {
+		background-image: url(../images/work-sprite@2x.png);
+	}
+	.app .laptop {
+		background-image: url(../images/laptop@2x.png);
+		background-size:  100% 100%;
+	}
+}
+
+@media screen and (min-width: 1050px) {
+	.app .app-features li, .app .app-stats li {
+		background-size:  17px 200px;
+	}
+}
