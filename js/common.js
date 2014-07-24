@@ -12,8 +12,8 @@ $(document).ready(function () {
 	var workLoopTimeout;
 	workSliders(2000, 1000);
 	$('img').removeAttr('width height');
-	$(document).keydown(function(event){if(event.keyCode==18){$('.email-button').hide();$('.twitter-button').css('display','block');$('.team h2').html('Tweet me');}});
-	$(document).keyup(function(event){if(event.keyCode==18){$('.email-button').show();$('.twitter-button').hide();$('.team h2').html('Meet me');}});
+	$(window).keydown(function(event){if(event.keyCode==84){$('.email-button').hide();$('.twitter-button').css('display','block');$('.team h2').html('Tweet me');}});
+	$(window).keyup(function(event){if(event.keyCode==84){$('.email-button').show();$('.twitter-button').hide();$('.team h2').html('Meet me');}});
 	$('textarea').autosize();
 });
 
