@@ -14,11 +14,10 @@
 	Web: 		http://rklimt.com
 	From: 		Illinois
 
-	Launched:	January 2014
-	IDE: 		Coda, Transmit, Photoshop
-	Built with:	WordPress, HTML5, CSS3, jQuery
+	Launched:	July 2014
+	Built with:	HTML5, CSS3, jQuery, PHP
 	
 	
 /* OTHER */
 
-	- Try hitting Alt on the 'About' page.
+	- Try hitting 'T' on the 'About' page.
