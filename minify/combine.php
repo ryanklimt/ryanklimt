@@ -186,14 +186,14 @@
 		}
 
 		//$contents = preg_replace('/(\/\*).*?(\*\/)/s', ' ', $contents);
-		//$contents = preg_replace(array('/\s+([^\w\'\"]+)\s+/', '/([^\w\'\"])\s+/'), '\\1 ', $contents);
+		$contents = preg_replace(array('/\s+([^\w\'\"]+)\s+/', '/([^\w\'\"])\s+/'), '\\1 ', $contents);
 
 		// Send Content-Type
 		header ("Content-Type: text/" . $type);
 
 		// strip tabs & newlines of css
 		$pattern = str_split("\t\n\r\0\x0B");
-		//$contents = trim(str_replace($pattern, '', $contents));
+		$contents = trim(str_replace($pattern, '', $contents));
 
 		// Send compressed contents
 		if (isset($encoding) && $encoding != 'none')

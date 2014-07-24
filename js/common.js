@@ -10,7 +10,7 @@ $(document).ready(function () {
 		ieHomeSlider(5000)
 	}
 	var workLoopTimeout;
-	workSliders(4000, 200);
+	workSliders(2000, 1000);
 	$('img').removeAttr('width height');
 	$(document).keydown(function(event){if(event.keyCode==18){$('.email-button').hide();$('.twitter-button').css('display','block');$('.team h2').html('Tweet me');}});
 	$(document).keyup(function(event){if(event.keyCode==18){$('.email-button').show();$('.twitter-button').hide();$('.team h2').html('Meet me');}});

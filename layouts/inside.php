@@ -44,6 +44,6 @@
 		<?php include('footer.php'); ?>
 
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script src="js/ajax.form.min.js,modernizr.min.js,retina.js,autosize.min.js,jquery.form.min.js,view.min.js,common.js"></script>
+		<script src="js/ajax.form.min.js,modernizr.min.js,autosize.min.js,jquery.form.min.js,common.js"></script>
 	</body>
 </html>
