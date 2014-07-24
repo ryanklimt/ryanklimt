@@ -22,9 +22,6 @@ function fitText() {
 		minFontSize: 32
 	});
 	$('#headline p').fitText(5.57);
-	$('#categories a').fitText(1.233333, {
-		maxFontSize: 27
-	});
 	$('.values h2').fitText(1, {
 		minFontSize: 18,
 		maxFontSize: 33
@@ -39,15 +36,13 @@ function labelPlaceholders() {
 	});
 	$('.label-placeholders input[type=text], .label-placeholders input[type=password], .label-placeholders input[type=email], .label-placeholders textarea').focusin(function () {
 		$(this).parent('li').find('label').addClass('dim');
-		$(this).parent('li').find('error');
 		$(this).keypress(function () {
 			$(this).parent('li').find('label').hide();
 		})
 	});
 	$('.label-placeholders input[type=text], .label-placeholders input[type=password], .label-placeholders input[type=email], .label-placeholders textarea').focusout(function () {
 		if (!$(this).val()) {
-			$(this).parent('li').find('label').removeClass('dim').show();
-			$(this).siblings().find('label').hide();
+			$(this).parent('li').find('label').last().removeClass('dim').show();
 		}
 	})
 }
@@ -65,7 +60,7 @@ function contactForm() {
 		},
 		invalidHandler: function () {
 			$(contactForm).addClass('error');
-			$(contactForm).find('label:not(.error, [for=contact_url])').hide()
+			$(contactForm).find('label:not(.error, [for=contact_url])').hide();
 		},
 		submitHandler: function (form) {
 			$(contactForm).append('<input type="hidden" name="ajax_submit" value="true" />');
