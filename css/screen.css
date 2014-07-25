@@ -2802,7 +2802,6 @@ blockquote, q {
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
   content: none;
 }
 
@@ -2977,7 +2976,9 @@ ul li {
   padding-left: 1.419em;
 }
 
-.email-button, .twitter-button, .download-button {
+.email-button,
+.twitter-button,
+.download-button {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -3096,6 +3097,11 @@ ul li {
   top: -24px;
   width: 100%;
 }
+#content-secondary header h2 {
+  background: transparent url(../images/html.jpg) left top repeat;
+  display: inline-block;
+  padding: 0 0.344em;
+}
 
 .ie7 #content-secondary header {
   display: block;
@@ -3103,13 +3109,6 @@ ul li {
   top: auto;
   width: 100%;
 }
-
-#content-secondary header h2 {
-  background: transparent url(../images/html.jpg) left top repeat;
-  display: inline-block;
-  padding: 0 0.344em;
-}
-
 .ie7 #content-secondary header h2 {
   display: block;
   margin: 0 auto 1.375em;
@@ -3152,7 +3151,8 @@ ul li {
   transition-duration: 0.2s;
 }
 
-#content-secondary .profile, #content-secondary .vacancy {
+#content-secondary .profile,
+#content-secondary .vacancy {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -3170,12 +3170,14 @@ ul li {
   width: 94.6%;
 }
 
-.no-rgba #content-secondary .profile, .no-rgba #content-secondary .vacancy {
+.no-rgba #content-secondary .profile,
+.no-rgba #content-secondary .vacancy {
   background: transparent url(../images/html-ie.jpg) left top repeat;
   border: 1px solid #D7D4CE;
 }
 
-#content-secondary .profile:before, #content-secondary .vacancy:before {
+#content-secondary .profile:before,
+#content-secondary .vacancy:before {
   background: transparent url(../images/profile-arrow.jpg) center no-repeat;
   content: "";
   display: block;
@@ -3186,7 +3188,8 @@ ul li {
   width: 100%;
 }
 
-#content-secondary .profile img, #content-secondary .vacancy img {
+#content-secondary .profile img,
+#content-secondary .vacancy img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -3213,11 +3216,15 @@ ul li {
   margin-bottom: 1.571em;
 }
 
-#content-secondary .profile .download-button, #content-secondary .vacancy .download-button {
+#content-secondary .profile .download-button,
+#content-secondary .vacancy .download-button {
   margin-top: 0.688em;
 }
 
-html.ie8 #content-secondary .profile:before, html.ie8 #content-secondary .vacancy:before, html.ie7 #content-secondary .profile:before, html.ie7 #content-secondary .vacancy:before {
+html.ie8 #content-secondary .profile:before,
+html.ie8 #content-secondary .vacancy:before,
+html.ie7 #content-secondary .profile:before,
+html.ie7 #content-secondary .vacancy:before {
   content: none;
 }
 
@@ -3255,7 +3262,8 @@ html.ie8 #content-secondary .profile:before, html.ie8 #content-secondary .vacanc
   left: 17%;
 }
 
-html.ie8 #content-secondary .badge, html.ie7 #content-secondary .badge {
+html.ie8 #content-secondary .badge,
+html.ie7 #content-secondary .badge {
   display: none;
 }
 
@@ -3355,6 +3363,29 @@ img.item-op {
 
 #contact .intro h2 {
   line-height: 1.333em;
+}
+
+#page-not-found {
+  position: relative;
+}
+
+#page-not-found .intro h2 {
+  line-height: 1.056em;
+}
+
+#page-not-found .intro {
+  padding: 11em 4.55% 0 0;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+#page-not-found img {
+  margin: 2.063em 0 1.375em;
+  position: relative;
+  width: 71%;
+  z-index: 1;
 }
 
 #content-secondary #no-vacancies {
@@ -3457,46 +3488,6 @@ div#contact-form textarea {
   width: 95.402%;
 }
 
-#page-not-found {
-  position: relative;
-}
-
-#page-not-found img {
-  -moz-transition-property: width;
-  -webkit-transition-property: width;
-  -o-transition-property: width;
-  transition-property: width;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  float: left;
-  margin: 2.063em 0 1.375em;
-  position: relative;
-  width: 71%;
-  z-index: 1;
-}
-
-#page-not-found .intro {
-  -moz-transition-property: padding;
-  -webkit-transition-property: padding;
-  -o-transition-property: padding;
-  transition-property: padding;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  padding: 11em 4.55% 0 0;
-  position: absolute;
-  right: 0;
-  width: 50%;
-  z-index: 2;
-}
-
-#page-not-found .intro h2 {
-  line-height: 1.056em;
-}
-
 #site-footer {
   border-top: 1px solid #2d2d2d;
   clear: both;
@@ -3519,8 +3510,31 @@ div#contact-form textarea {
   padding-left: 72px;
 }
 
-abbr.dm {
-  border: none;
+#content-secondary .skill-5,
+#content-secondary .skill-4,
+#content-secondary .skill-3,
+#content-secondary .skill-2,
+#content-secondary .skill-1 {
+  background: url(../images/skills_stars.png) no-repeat;
+  width: 150px;
+  height: 30px;
+  margin: 0 0 20px 0;
+}
+
+#content-secondary .skill-1 {
+  background-position: 0 -120px;
+}
+
+#content-secondary .skill-2 {
+  background-position: 0 -90px;
+}
+
+#content-secondary .skill-3 {
+  background-position: 0 -60px;
+}
+
+#content-secondary .skill-4 {
+  background-position: 0 -30px;
 }
 
 @media screen and (max-width: 1050px), (max-device-width: 1024px) {
@@ -3591,14 +3605,6 @@ abbr.dm {
   }
 
   #about .intro {
-    -moz-transition-property: padding;
-    -webkit-transition-property: padding;
-    -o-transition-property: padding;
-    transition-property: padding;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
     padding-top: 5.5em;
   }
 
@@ -3669,7 +3675,9 @@ abbr.dm {
     border-top: none;
   }
 
-  #content-secondary .item, .about #content-secondary div.item {
+  #content-secondary .item,
+  .about #content-secondary div.item {
+    border-bottom: 1px dashed #cbc9c5;
     margin: 0 0 2.75em 0;
     padding-bottom: 2.75em;
     width: 100%;
@@ -3712,14 +3720,6 @@ abbr.dm {
   }
 
   #content .intro {
-    -moz-transition-property: padding;
-    -webkit-transition-property: padding;
-    -o-transition-property: padding;
-    transition-property: padding;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
     padding: 0 0 2.75em 0;
     text-align: center;
   }
@@ -3751,6 +3751,16 @@ abbr.dm {
     margin-bottom: 0.688em;
   }
 
+  #page-not-found .intro {
+    padding: 0;
+    position: static;
+    width: 100%;
+  }
+
+  #page-not-found img {
+    width: 90%;
+  }
+
   #content .badge img,
   #content #slideshow-mask,
   #content #slideshow img.responsive-spacer {
@@ -3759,6 +3769,11 @@ abbr.dm {
 
   #content #slideshow .slide img {
     margin: 20px 20% 15px 20%;
+  }
+
+  #content .laptop img {
+    float: left;
+    margin: 0;
   }
 
   .contact #content-secondary #location {
@@ -3777,36 +3792,6 @@ abbr.dm {
   }
 
   div#contact-form {
-    width: 100%;
-  }
-
-  #page-not-found img {
-    -moz-transition-property: width;
-    -webkit-transition-property: width;
-    -o-transition-property: width;
-    transition-property: width;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    display: block;
-    float: none;
-    margin: 1.375em auto;
-    width: 90%;
-  }
-
-  #page-not-found .intro {
-    -moz-transition-property: padding;
-    -webkit-transition-property: padding;
-    -o-transition-property: padding;
-    transition-property: padding;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    padding: 0;
-    position: static;
-    text-align: center;
     width: 100%;
   }
 
@@ -3859,17 +3844,6 @@ abbr.dm {
     background-image: url(../images/ryanklimt-icon.png);
   }
 }
-@media screen and (min-width: 681px) {
-  #resume .intro {
-    float: left;
-    width: 35%;
-    margin-bottom: 30px;
-  }
-
-  #company-info {
-    background-size: 58px 58px;
-  }
-}
 .nobreak {
   white-space: nowrap;
 }
@@ -3884,33 +3858,17 @@ abbr.dm {
   clear: both;
 }
 
-#content-secondary .skill-5,
-#content-secondary .skill-4,
-#content-secondary .skill-3,
-#content-secondary .skill-2,
-#content-secondary .skill-1 {
-  background: url(../images/skills_stars.png) no-repeat;
-  width: 150px;
-  height: 30px;
-  margin: 0 0 20px 0;
-}
+@media screen and (min-width: 681px) {
+  #resume .intro {
+    float: left;
+    width: 35%;
+    margin-bottom: 30px;
+  }
 
-#content-secondary .skill-1 {
-  background-position: 0 -120px;
+  #company-info {
+    background-size: 58px 58px;
+  }
 }
-
-#content-secondary .skill-2 {
-  background-position: 0 -90px;
-}
-
-#content-secondary .skill-3 {
-  background-position: 0 -60px;
-}
-
-#content-secondary .skill-4 {
-  background-position: 0 -30px;
-}
-
 @media screen and (max-width: 920px) {
   #content-secondary .vacancy:before {
     display: none;
@@ -3960,7 +3918,7 @@ abbr.dm {
 }
 
 @media screen and (max-width: 550px) {
-  #content-secondary .vacancy.skills {
+  #content-secondary #no-vacancies .vacancy.skills {
     width: 89%;
     float: left;
   }
