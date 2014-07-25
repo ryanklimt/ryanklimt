@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="no-js ie ie6" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html>
-<!--<![endif]-->
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,7 +8,7 @@
 		
 		<title>Ryan Klimt | <?php echo $_title; ?></title>
 		<base href="<?php echo BASE_URL; ?>">
-		
+
 		<link rel="stylesheet" href="css/screen.css" media="screen" type="text/css">
 		<link rel="stylesheet" href="css/print.css" media="print" type="text/css">
 

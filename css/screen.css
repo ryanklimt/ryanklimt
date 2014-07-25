@@ -3491,6 +3491,20 @@ div#contact-form textarea {
   text-align: left;
 }
 
+.no-rgba #content-secondary .profile,
+.no-rgba #content-secondary .vacancy {
+  background: transparent url(../images/html-ie.jpg) left top repeat;
+  border: 1px solid #D7D4CE;
+}
+
+.no-rgba .email-button, .no-rgba.twitter-button {
+  background-color: #8ecfe6;
+}
+
+.no-rgba .download-button {
+  background-color: #e29995;
+}
+
 #content-secondary .skill-5,
 #content-secondary .skill-4,
 #content-secondary .skill-3,
