@@ -27,16 +27,6 @@ body {
 	min-height:990px;
 	max-width:68.688em;
 }
-blockquote, q {
-	quotes:none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-	content:none;
-}
-table {
-	border-collapse:collapse;
-	border-spacing:0;
-}
 ::selection,
 ::-moz-selection {
 	text-shadow:none;
@@ -107,6 +97,12 @@ a {
 a:hover, a:focus {
 	border-bottom:1px dashed $link-hover-font-color;
 	color:$link-hover-font-color;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content:none;
 }
 blockquote {
 	background:url(../images/blockquote-lsquo.png) left top no-repeat, url(../images/blockquote-rsquo.png) right bottom no-repeat;
@@ -200,9 +196,6 @@ ul li {
 	text-align:center;
 	width:80%;
 }
-.no-rgba .email-button, .twitter-button, .no-rgba .download-button {
-	background-color:#8ecfe6;
-}
 .twitter-button {
 	display:none;
 }
@@ -211,7 +204,12 @@ ul li {
 	border-bottom:1px solid #3fa6cf;
 	color:#FFF;
 }
-.email-button:focus, .email-button:active, .twitter-button:focus, .twitter-button:active, .download-button:focus, .download-button:active {
+.email-button:focus, 
+.email-button:active, 
+.twitter-button:focus,
+.twitter-button:active,
+.download-button:focus,
+.download-button:active {
 	background-color:#2c8aaf;
 	color:#FFF;
 }
@@ -219,22 +217,12 @@ ul li {
 	background-color:rgba(213, 52, 52, 0.4);
 	border:1px solid #e26767;
 }
-.no-rgba .download-button {
-	background-color:#e29995;
-}
-.profile .twitter-anywhere-user {
-	border:none;
-	color:white;
-}
-.profile .twitter-anywhere-user:hover {
-	border:none;
-	color:white;
-}
 .download-button:hover {
 	background-color:#e26767;
 	border-bottom:1px solid #e26767;
 }
-.download-button:focus, .download-button:active {
+.download-button:focus,
+.download-button:active {
 	background-color:#da3c3c;
 	color:#FFF;
 }
@@ -243,7 +231,7 @@ ul li {
 	height:37px;
 	padding-bottom:2.063em;
 }
-#site-header h1 a, .ie8 #site-header h1 a, .ie7 #site-header h1 a {
+#site-header h1 a {
 	background:transparent $logo center no-repeat;
 	border:none;
 	display:block;
@@ -283,16 +271,6 @@ ul li {
 		padding:0 0.344em;
 	}
 }
-.ie7 #content-secondary header {
-	display:block;
-	position:relative;
-	top:auto;
-	width:100%;
-	h2 {
-		display:block;
-		margin:0 auto 1.375em;
-	}
-}
 #content-secondary div {
 	float:left;
 	margin-right:4.55%;
@@ -308,8 +286,6 @@ ul li {
 #content-secondary div:nth-child(3) {
 	margin-right:0;
 }
-.ie7 #content-secondary div {
-	margin-right:4%}
 #content-secondary div:last-child {
 	margin-right:0;
 }
@@ -340,11 +316,6 @@ ul li {
 #content-secondary .profile {
 	width:94.6%;
 }
-.no-rgba #content-secondary .profile,
-.no-rgba #content-secondary .vacancy {
-	background:transparent url(../images/html-ie.jpg) left top repeat;
-	border:1px solid #D7D4CE;
-}
 #content-secondary .profile:before,
 #content-secondary .vacancy:before {
 	background:transparent url(../images/profile-arrow.jpg) center no-repeat;
@@ -354,7 +325,8 @@ ul li {
 	left:0;
 	position:absolute;
 	top:-17px;
-	width:100%}
+	width:100%;
+}
 #content-secondary .profile img,
 #content-secondary .vacancy img {
 	-moz-border-radius:4px;
@@ -382,12 +354,6 @@ ul li {
 #content-secondary .profile .download-button,
 #content-secondary .vacancy .download-button {
 	margin-top:0.688em;
-}
-html.ie8 #content-secondary .profile:before,
-html.ie8 #content-secondary .vacancy:before,
-html.ie7 #content-secondary .profile:before,
-html.ie7 #content-secondary .vacancy:before {
-	content:none;
 }
 #content-secondary .badge {
 	-moz-border-radius:50px;
@@ -419,10 +385,6 @@ html.ie7 #content-secondary .vacancy:before {
 }
 #content-secondary .badge img.developer {
 	left:17%;
-}
-html.ie8 #content-secondary .badge,
-html.ie7 #content-secondary .badge {
-	display:none;
 }
 #headline {
 	margin-bottom:0;
@@ -538,6 +500,15 @@ img.item-op {
 	width:100%;
 	margin-right:0;
 }
+#content-secondary .hide-mobile:before {
+	display:none;
+}
+#content-secondary .vacancy.employment h4 {
+	font-weight:bold;
+}
+#content-secondary .vacancy.employment em {
+	float:right;
+}
 .contact #content-secondary {
 	border-bottom:1px solid $base-font-color;
 	margin-bottom:4.125em;
@@ -621,6 +592,21 @@ div#contact-form textarea {
 	font-size:0.75em;
 	min-height:58px;
 	padding-left:72px;
+}
+.nobreak {
+	white-space:nowrap;
+}
+#content-secondary h4 {
+	text-align:left;
+	margin-bottom:0;
+	clear:both;
+}
+.resume h3 {
+	font-size:1.8em;
+}
+.resume .vacancy ul {
+	margin:0 0 1em 0;
+	text-align:left;
 }
 #content-secondary .skill-5,
 #content-secondary .skill-4,
@@ -870,44 +856,6 @@ div#contact-form textarea {
 		margin-bottom:2.75em;
 	}
 }
-@media screen and (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:5/4), (min--moz-device-pixel-ratio:2), (min-resolution:2dppx) {
-	html {
-		background-size:120px 120px;
-	}
-	#site-header h1 a, #site-header .logo a, #site-header div.logo a {
-		-moz-background-size:161px 37px;
-		-webkit-background-size:161px 37px;
-		-o-background-size:161px 37px;
-		background-size:161px 37px;
-	}
-	#content-secondary header h2 {
-		background-size:120px 120px;
-	}
-	ul li {
-		background-image:url(../images/ul-li-bullet@2x.png);
-	}
-	#content-secondary .profile:before, #content-secondary .vacancy:before {
-		background:transparent url(../images/profile-arrow@2x.jpg) center no-repeat;
-		-moz-background-size:33px auto;
-		-webkit-background-size:33px auto;
-		-o-background-size:33px auto;
-		background-size:33px auto;
-	}
-	#company-info  {
-		background-image:$small-logo;
-	}
-}
-.nobreak {
-	white-space:nowrap;
-}
-#content-secondary div.normad {
-	margin-right:10px;
-}
-#content-secondary h4 {
-	text-align:left;
-	margin-bottom:0;
-	clear:both;
-}
 @media screen and (min-width:681px) {
 	#resume .intro {
 		float:left;
@@ -940,22 +888,6 @@ div#contact-form textarea {
 	#content-secondary #no-vacancies .vacancy.right-mobile {
 		float:right;
 	}
-}
-#content-secondary .hide-mobile:before {
-	display:none;
-}
-#content-secondary .vacancy.employment h4 {
-	font-weight:bold;
-}
-#content-secondary .vacancy.employment em {
-	float:right;
-}
-.resume h3 {
-	font-size:1.8em;
-}
-.resume .vacancy ul {
-	margin:0 0 1em 0;
-	text-align:left;
 }
 @media screen and (max-width:550px) {
 	#content-secondary #no-vacancies .vacancy.skills {

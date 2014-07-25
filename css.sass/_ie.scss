@@ -1,0 +1,49 @@
+.ie8 #site-header h1 a, .ie7 #site-header h1 a {
+	background:transparent $logo center no-repeat;
+	border:none;
+	display:block;
+	float:left;
+	height:37px;
+	text-indent:-9999px;
+	width:161px;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+.ie7 #content-secondary header {
+	display:block;
+	position:relative;
+	top:auto;
+	width:100%;
+	h2 {
+		display:block;
+		margin:0 auto 1.375em;
+	}
+}
+.ie7 #content-secondary div {
+	margin-right:4%;
+}
+html.ie8 #content-secondary .profile:before,
+html.ie8 #content-secondary .vacancy:before,
+html.ie7 #content-secondary .profile:before,
+html.ie7 #content-secondary .vacancy:before {
+	content:none;
+}
+html.ie8 #content-secondary .badge,
+html.ie7 #content-secondary .badge {
+	display:none;
+}
+.no-rgba #content-secondary .profile,
+.no-rgba #content-secondary .vacancy {
+	background:transparent url(../images/html-ie.jpg) left top repeat;
+	border:1px solid #D7D4CE;
+}
+.no-rgba .email-button, .no-rgba.twitter-button {
+	background-color:#8ecfe6;
+}
+.no-rgba .download-button {
+	background-color:#e29995;
+}
