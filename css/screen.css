@@ -2361,16 +2361,6 @@
     background-position: left 3px;
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 5 / 4), (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .app .app-features li, .app .app-stats li {
-    background-image: url(../images/work-sprite@2x.png);
-  }
-
-  .app .laptop {
-    background-image: url(../images/laptop@2x.png);
-    background-size: 100% 100%;
-  }
-}
 @media screen and (min-width: 1050px) {
   .app .app-features li, .app .app-stats li {
     background-size: 17px 200px;
@@ -2517,32 +2507,6 @@
     -o-background-size: 12px auto;
     background-size: 12px auto;
     padding-left: 28px;
-  }
-}
-@media screen and (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 5 / 4), (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  #social .networks .twitter {
-    background-image: url(../images/twitter-icon@2x.png);
-    background-size: 24px 24px;
-  }
-
-  #social .networks .facebook {
-    background-image: url(../images/facebook-icon@2x.png);
-    background-size: 24px 24px;
-  }
-
-  #social .networks .linkedin {
-    background-image: url(../images/linkedin-icon@2x.png);
-    background-size: 24px 24px;
-  }
-
-  #social .networks .youtube {
-    background-image: url(../images/youtube-icon@2x.png);
-    background-size: 24px 24px;
-  }
-
-  #social div:nth-child(2) {
-    background-image: url(../images/social-divider@2x.png), url(../images/social-divider@2x.png);
-    background-size: 4px 7px;
   }
 }
 form ul.form-structure {

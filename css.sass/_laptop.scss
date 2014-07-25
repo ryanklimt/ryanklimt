@@ -137,17 +137,6 @@
 		background-position: left 3px;
 	}
 }
-
-@media screen and (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 5/4), (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-	.app .app-features li, .app .app-stats li {
-		background-image: url(../images/work-sprite@2x.png);
-	}
-	.app .laptop {
-		background-image: url(../images/laptop@2x.png);
-		background-size:  100% 100%;
-	}
-}
-
 @media screen and (min-width: 1050px) {
 	.app .app-features li, .app .app-stats li {
 		background-size:  17px 200px;
