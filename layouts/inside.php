@@ -9,8 +9,7 @@
 		<title>Ryan Klimt | <?php echo $_title; ?></title>
 		<base href="<?php echo BASE_URL; ?>">
 
-		<link rel="stylesheet" href="css/screen.css" media="screen" type="text/css">
-		<link rel="stylesheet" href="css/print.css" media="print" type="text/css">
+		<link rel="stylesheet" href="css/screen.css" media="all" type="text/css">
 
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16 32x32">
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16 32x32">
