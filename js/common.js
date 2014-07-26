@@ -5,10 +5,6 @@ $(document).ready(function () {
 	contactForm();
 	var homeLoopTimeout;
 	homeSlider(5000, 200);
-	if ($('html').hasClass('ie8') || $('html').hasClass('ie7')) {
-		var ieHomeLoopTimeout;
-		ieHomeSlider(5000)
-	}
 	var workLoopTimeout;
 	workSliders(2000, 1000);
 	$('img').removeAttr('width height');
@@ -127,34 +123,6 @@ function homeSliderLoop(interval, speed) {
 			}, interval)
 		})
 	})
-}
-
-function ieHomeSlider(interval) {
-	$('.slide', slideshow).hide();
-	$(window).load(function () {
-		slideshow.removeClass('loading');
-		$('.slide:first', slideshow).show().addClass('current');
-		var length = $('.slide', slideshow).length;
-		if (length > 1) {
-			setTimeout(function () {
-				ieHomeSliderLoop(interval)
-			}, interval)
-		}
-	})
-}
-
-function ieHomeSliderLoop(interval) {
-	var current = $('.slide.current', slideshow);
-	current.hide();
-	var next = current.next('.slide');
-	if (next.is(':last')) {
-		next = $(':first(.slide)', slideshow)
-	}
-	current.removeClass('current animate');
-	next.show().addClass('current');
-	ieHomeLoopTimeout = setTimeout(function () {
-		ieHomeSliderLoop(interval)
-	}, interval)
 }
 
 function workSliders(interval, speed) {
