@@ -46,6 +46,7 @@ DirectoryIndex index.php
 	RewriteRule ^views/(.*\.php) index.php [L]
 	RewriteRule ^layouts/(.*\.php) index.php [L]
 	RewriteRule ^includes/(.*\.php) index.php [L]
+	RewriteRule ^controllers/(.*\.php) index.php [L]
 
 	# ----------------------------------------
 	# Route all requests to our framework

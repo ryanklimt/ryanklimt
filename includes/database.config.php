@@ -1,9 +1,9 @@
 <?php
 
-	$Database['Host'] = 'localhost';
-	$Database['Name'] = 'test';
-	$Database['User'] = 'root';
-	$Database['Pass'] = 'mysql';
+	$Database['Host'] = 'mysql13.000webhost.com';
+	$Database['Name'] = 'a3544935_rklimt';
+	$Database['User'] = 'a3544935_rklimt';
+	$Database['Pass'] = 'Ryanjohn64';
 
 	if (!defined('DB_HOST')) {
 		define('DB_HOST', $Database['Host']);
