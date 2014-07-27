@@ -1,9 +1,6 @@
 <?php
-	$start = 0;
-	$perPage = 3;
-	if(isset($_params[0]) && is_numeric($_params[0])) $start = ($_params[0] * $perPage) - $perPage;
 	$db = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_NAME);
-	$query = "SELECT * FROM blog LIMIT ".$start.", ".$perPage;
+	$query = "SELECT * FROM blog";
 	$result = $db->query($query);
 	$posts = array();
 	if($result->num_rows > 0) {

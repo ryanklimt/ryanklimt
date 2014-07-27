@@ -1,0 +1,20 @@
+#archive .post {
+	border-bottom:1px solid $base-font-color;
+	margin-bottom:2.75em;
+	padding:0 18.156% 1.375em 0;
+	position:relative;
+}
+
+.older_posts {
+	float:left;
+}
+
+.newer_posts {
+	float:right;
+}
+
+@media screen and (max-width: 1050px), (max-device-width: 1024px) {
+	#archive .post {
+		padding:0 0 1.375em 0;
+	}
+}
