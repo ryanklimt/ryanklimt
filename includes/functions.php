@@ -5,6 +5,8 @@
 		$x = explode('-', $y[0]);
 		$m = (int)$x[1];
 		$m = $month[$m];
-		return $x[2] . ' ' . $m . ' ' . $x[0];
+		$date = $x[2][0] == "0" ? $x[2][1] : $x[2];
+		return $date . ' ' . $m . ' ' . $x[0];
+
 	}
 ?>

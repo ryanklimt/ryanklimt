@@ -1,11 +1,12 @@
 <?php
 	$perPage = 3;
-	$page = isset($_params[0]) && is_numeric($_params[0]) ? $_params[0] : 1;
-	$start = ($page * $perPage) - $perPage;
 	$numPages = ceil(sizeof($posts) / $perPage);
+	$page = isset($_params[0]) && is_numeric($_params[0]) ? $_params[0] : 1;
+	if(isset($_params[0]) && $_params[0] > $numPages) $page = $numPages;
+	$start = ($page * $perPage) - $perPage;
 	$previousPage = $page >= 1 ? $page-=1 : false;
 	$nextPage = $page + 1 < $numPages ? $page+=2 : false;
-	if($previousPage && $previousPage > $numPages) $previousPage = $numPages;
+	if($previousPage && $previousPage > $numPages) $previousPage = $numPages - 1;
 	if($nextPage && $nextPage < 1) $nextPage = 1;
 	$posts = array_slice($posts, $start, $perPage);
 ?>
