@@ -1,14 +1,15 @@
 <?php
-	$db = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_NAME);
-	$query = "SELECT * FROM blog";
-	$result = $db->query($query);
-	$posts = array();
-	if($result->num_rows > 0) {
-		$i = 0;
-		while($row = $result->fetch_assoc()) {
-			$posts[$i] = $row;
-			$i++;
-		}
-	}
-	mysqli_close($db);
+	$page = isset($_params[0]) && is_numeric($_params[0]) ? $_params[0] : 1;
+	$perPage = 3;
+	$numPages = floor(numBlogPosts() / $perPage) + 1;
+
+	if($page < 1) $page = 1;
+	if($page > $numPages) $page = $numPages;
+
+	$tmpValue = $page;
+
+	if($page > 0) $previousPage = $tmpValue-=1;
+	if($page < $numPages) $nextPage = $tmpValue+=2;
+
+	$posts = getBlogPosts($page, $perPage);
 ?>
