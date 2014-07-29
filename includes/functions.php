@@ -22,12 +22,8 @@
 		$start = ($page * $perPage) - $perPage;
 		$result = query("SELECT * FROM blog LIMIT ".$start.", ".$perPage);
 		$posts = array();
-		if($result->num_rows > 0) {
-			$i = 0;
-			while($row = $result->fetch_assoc()) {
-				$posts[$i] = $row;
-				$i++;
-			}
+		while($result->num_rows > 0 && $posts[$i] = $result->fetch_assoc()) {
+			$i++;
 		}
 		return $posts;
 	}
