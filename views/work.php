@@ -3,7 +3,7 @@
 	<div class="intro">
 		<h2>My work</h2>
 		<p>I work closely with my clients to create beautifully crafted websites that change the way we do things.</p>
-		<p>Below is a selection of my work. If you have an idea that you’d like me to help you realise, <a title="Contact me" href="contact/">drop me a line</a>.</p>	
+		<p>Below is a selection of my work. If you have an idea that you’d like me to help you realise, <a title="Contact me" href="contact">drop me a line</a>.</p>	
 	</div>
 </div>
 

@@ -5,7 +5,7 @@
 	Back-end:	Ryan Klimt
 	Twitter:	@ryanklimt
 	Location:	Chicago, IL
-	
+
 
 /* SITE */
 
@@ -16,8 +16,8 @@
 
 	Launched:	July 2014
 	Built with:	HTML5, CSS3, jQuery, PHP
-	
-	
+
+
 /* OTHER */
 
 	- Try hitting 'T' on the 'About' page.

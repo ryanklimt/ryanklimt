@@ -24,7 +24,7 @@
 
 			<p>What's up, Dear Reader. I'm Ryan Klimt, a web designer and developer.  As a well-rounded user experience developer, I make sure that system, interfaces, language, and designs are human-friendly, emotive, aesthetically pleasing, clear, on-brand and usable - with a touch of mellow smoothness.</p>
 			<p>I am primarily a web developer through the use of html, css, php, javascript, and jQuery to provide users with a responsive web experience.  Although I am currently enrolled at Taylor University in Upland, Indiana, I find time on a daily basis to expand my knowledge in the future of the web.</p>
-			<p>Each site I develop is built to be search engine friendly, using the latest development principles and techniques.  To find out more about what I can do for you, check out my work <a href="work/">here</a>, or get ahold of me by either <a href="mailto:ryanklimt@gmail.com">email</a> or by phone at <b>847 912-2543</b>.</p>
+			<p>Each site I develop is built to be search engine friendly, using the latest development principles and techniques.  To find out more about what I can do for you, check out my work <a href="work">here</a>, or get ahold of me by either <a href="mailto:ryanklimt@gmail.com">email</a> or by phone at <b>847 912-2543</b>.</p>
 
 			<a class="email-button" href="mailto:ryanklimt@gmail.com">ryanklimt@gmail.com</a>
 			<span class="twitter-button">@ryanklimt</span>

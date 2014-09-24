@@ -1,5 +1,5 @@
 <div id="archive">
-	<h1><a href='blog/'>Blog</a></h1>
+	<h1><a href='blog'>Blog</a></h1>
 	<?php foreach($posts as $post) { ?>
 		<article class="post">
 			<header>
