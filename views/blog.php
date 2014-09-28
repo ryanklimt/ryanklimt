@@ -1,6 +1,6 @@
 <div id="archive">
 	<h1><a href='blog'>Blog</a></h1>
-	<?php foreach($posts as $post) { ?>
+	<?php foreach($posts as $post) { if(isset($post['content'])) { ?>
 		<article class="post">
 			<header>
 				<h2><?php echo $post['title']; ?></h2>
@@ -8,7 +8,7 @@
 			</header>
 			<?php echo $post['content']; ?>
 		</article>
-	<?php } ?>
+	<?php }} ?>
 	<?php if($nextPage) { ?>
 		<div class="older_posts"><a href="blog/<?php echo $nextPage;?>">&#8592; Older posts</a></div>
 	<?php } ?>
