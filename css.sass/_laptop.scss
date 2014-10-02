@@ -79,6 +79,66 @@
 	background-position: left 2px;
 }
 
+.app .mobile {
+	position:relative;
+	height:310px;
+	img {
+		position:absolute;
+		box-shadow:10px 10px 5px #888888;
+		&:nth-child(1) {
+			left:5%;
+			z-index:1;
+			transform:rotate(-10deg);
+			-ms-transform:rotate(-10deg);
+			-webkit-transform:rotate(-10deg);
+		}
+		&:nth-child(2) {
+			left:17.5%;
+			z-index:2;
+			transform:rotate(-6deg);
+			-ms-transform:rotate(-6deg);
+			-webkit-transform:rotate(-6deg);
+		}
+		&:nth-child(3) {
+			left:30%;
+			z-index:3;
+			transform:rotate(-3deg);
+			-ms-transform:rotate(-3deg);
+			-webkit-transform:rotate(-3deg);
+		}
+		&:nth-child(4) {
+			z-index:4;
+			left:0;
+			right:0;
+		}
+		&:nth-child(5) {
+			right:30%;
+			z-index:3;
+			transform:rotate(3deg);
+			-ms-transform:rotate(3deg);
+			-webkit-transform:rotate(3deg);
+		}
+		&:nth-child(6) {
+			right:17.5%;
+			z-index:2;
+			transform:rotate(6deg);
+			-ms-transform:rotate(6deg);
+			-webkit-transform:rotate(6deg);
+		}
+		&:nth-child(7) {
+			right:5%;
+			z-index:1;
+			transform:rotate(10deg);
+			-ms-transform:rotate(10deg);
+			-webkit-transform:rotate(10deg);
+		}
+	}
+}
+
+#content .app .mobile img {
+	margin:0 auto;
+}
+
 @media screen and (max-width: 1050px), (max-device-width: 1024px) {
 	.app .app-features li {
 		background-position: left -68px;

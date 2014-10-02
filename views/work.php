@@ -3,7 +3,46 @@
 	<div class="intro">
 		<h2>My work</h2>
 		<p>I work closely with my clients to create beautifully crafted websites that change the way we do things.</p>
-		<p>Below is a selection of my work. If you have an idea that you’d like me to help you realise, <a title="Contact me" href="contact">drop me a line</a>.</p>	
+		<p>Below is a small selection of some of my work. If you have an idea that you’d like me to help you realise, <a title="Contact me" href="contact">drop me a line</a>.</p>	
+	</div>
+</div>
+
+<div class="app">
+	<div class="mobile">
+		<img src="images/reactile-01.png">
+		<img src="images/reactile-02.png">
+		<img src="images/reactile-03.png">
+		<img src="images/reactile-04.png">
+		<img src="images/reactile-05.png">
+		<img src="images/reactile-06.png">
+		<img src="images/reactile-07.png">
+	</div>
+
+	<div class="app-details">
+		<div class="app-description">
+			<h2>Reactile</h2>
+			<p>Tap away in this simple, yet addictive game. Play any of the 7 different game modes to beat your scores and see how you will fair against your friends.</p>
+			<p>This game, originally titled "Tapster", was created by Ryan Szemplinski using some general concepts found in the hit game "Don't Tap the White Tile".  I saw potential in the game and began to restructure, enhance, and integrate some new concepts.  We have worked together to create what you see today in this popular, simplistic, addicting game.</p>
+		</div>
+		
+		<div class="app-points">
+			<div class="app-features">
+				<h2>Download Now</h2>
+				<ul>
+					<li><a href="https://itunes.apple.com/us/app/tapsters/id911605505">iOS</a></li>
+					<li><a href="https://play.google.com/store/apps/details?id=com.codevomit.tapsterz">Goole Play</a></li>
+				</ul>
+			</div>
+			<div class="app-stats">
+				<h2>Other Facts</h2>	
+				<ul>
+					<li>Seven extremely addicting game modes</li>
+					<li>Leaderboards and Achievements</li>
+					<li>Store adds "Play On" feature</li>
+					<li>Over 100+ downloads</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </div>
 

@@ -140,7 +140,7 @@ function workSliders(interval, speed) {
 				workSlidersLoop(slideContainer, interval, speed)
 			}, interval + (Math.floor(Math.random() * 6) * 1000))
 		}
-	})
+	});
 }
 
 function workSlidersLoop(e, interval, speed) {
