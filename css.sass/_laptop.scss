@@ -161,6 +161,9 @@
 		border-bottom: 0;
 		margin-bottom: 2.75em;
 	}
+	.app .mobile {
+		margin-bottom:25px;
+	}
 	.app .laptop {
 		display: block;
 		float: none;
@@ -196,9 +199,42 @@
 	.app .app-stats li {
 		background-position: left 3px;
 	}
+	.app .mobile img {
+		&:nth-child(1) {
+			transform:rotate(-6deg);
+			-ms-transform:rotate(-6deg);
+			-webkit-transform:rotate(-6deg);
+		}
+		&:nth-child(2) {
+			transform:rotate(-4deg);
+			-ms-transform:rotate(-4deg);
+			-webkit-transform:rotate(-4deg);
+		}
+		&:nth-child(3) {
+			transform:rotate(-2deg);
+			-ms-transform:rotate(-2deg);
+			-webkit-transform:rotate(-2deg);
+		}
+		&:nth-child(5) {
+			transform:rotate(2deg);
+			-ms-transform:rotate(2deg);
+			-webkit-transform:rotate(2deg);
+		}
+		&:nth-child(6) {
+			transform:rotate(4deg);
+			-ms-transform:rotate(4deg);
+			-webkit-transform:rotate(4deg);
+		}
+		&:nth-child(7) {
+			transform:rotate(6deg);
+			-ms-transform:rotate(6deg);
+			-webkit-transform:rotate(6deg);
+		}
+	}
 }
 @media screen and (min-width: 1050px) {
-	.app .app-features li, .app .app-stats li {
-		background-size:  17px 200px;
+	.app .app-features li,
+	.app .app-stats li {
+		background-size: 17px 200px;
 	}
 }
