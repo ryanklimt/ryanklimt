@@ -15,12 +15,8 @@
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16 32x32">
 		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-114x114-precomposed.png">
 
-		<meta name="description" content="An outstanding web developer specialising in beautiful website design and innovative development.">
-		<meta name="keywords" content="ryan klimt, web development, web developer, web designer, front end developer, back end developer, computer science, resume, klimt, rklimt, ryan klimt web developer, klimt web, klimt developer">
-		<meta property="og:type" content="blog">
-		<meta property="og:title" content="Ryan Klimt">
-		<meta property="og:url" content="">
-		<meta property="og:site_name" content="Ryan Klimt">
+		<meta name="description" content="Ryan Klimt, a freelance web developer specialising in beautiful website design and innovative development.">
+		<meta name="keywords" content="Ryan Klimt, rjk, freelance, freelance programmer, programmer, web development, web developer, web designer, front end developer, back end developer, computer science, klimt, rklimt, ryan klimt web developer, klimt web, klimt developer, klimt programmer">
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@ryanklimt">
 	</head>
