@@ -1,9 +1,9 @@
 <?php
 
 	if(stripos($_SERVER['SERVER_NAME'], 'rklimt.com') !== FALSE) {
-		$Database['Host'] = 'mysql13.000webhost.com';
-		$Database['Name'] = 'a3544935_rklimt';
-		$Database['User'] = 'a3544935_rklimt';
+		$Database['Host'] = 'mysql1.000webhost.com';
+		$Database['Name'] = 'a6383143_rklimt';
+		$Database['User'] = 'a6383143_rklimt';
 		$Database['Pass'] = 'Ryanjohn64';
 	} else {
 		$Database['Host'] = 'localhost';

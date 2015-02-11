@@ -20,7 +20,7 @@
 	}
 	function getBlogPosts($page, $perPage) {
 		$start = ($page * $perPage) - $perPage;
-		$result = query("SELECT * FROM blog LIMIT ".$start.", ".$perPage);
+		$result = query("SELECT * FROM blog ORDER BY date DESC LIMIT ".$start.", ".$perPage);
 		$posts = array();
 		while($result->num_rows > 0 && $posts[$i] = $result->fetch_assoc()) {
 			$i++;
