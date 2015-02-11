@@ -37,7 +37,7 @@
 }
 .primary-nav ul li.current a,
 .primary-nav ul li a:active,
-.primary-nav ul li a:hover, {
+.primary-nav ul li a:hover {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-o-border-radius: 4px;
@@ -48,6 +48,9 @@
 	border: 1px solid rgba(0, 0, 0, 0.15);
 	color: $base-font-color;
 	margin: 0;
+}
+.primary-nav ul li a:focus {
+	color: $base-font-color;
 }
 .no-rgba .primary-nav ul li.current a,
 .no-rgba .primary-nav ul li a:active,

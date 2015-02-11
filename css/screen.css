@@ -2795,6 +2795,10 @@ input[type=submit]:active {
   margin: 0;
 }
 
+.primary-nav ul li a:focus {
+  color: #2d2d2d;
+}
+
 .no-rgba .primary-nav ul li.current a,
 .no-rgba .primary-nav ul li a:active,
 .no-rgba .primary-nav ul li a:hover {
