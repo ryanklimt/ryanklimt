@@ -26,7 +26,7 @@ DirectoryIndex index.php
 
 <IfModule mod_rewrite.c>
 	RewriteEngine On
-	RewriteBase /rklimt/
+	RewriteBase /
 
 	# ----------------------------------------
 	# No directory listings anywhere
@@ -50,6 +50,13 @@ DirectoryIndex index.php
 
 	RewriteRule ^humans.txt humans.txt [L]
 	RewriteRule ^robots.txt robots.txt [L]
+
+	# ----------------------------------------
+	# Force https connection and remove www
+	# ----------------------------------------
+	RewriteCond %{HTTPS} off [OR]
+	RewriteCond %{HTTP_HOST} www.ryanklimt.me [NC]
+	RewriteRule (.*) https://ryanklimt.me/$1 [R=301,L]
 
 	# ----------------------------------------
 	# Route all requests to our framework

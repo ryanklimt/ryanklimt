@@ -5,32 +5,32 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>http://rklimt.com/</loc>
+  <loc>https://ryanklimt.me/</loc>
   <changefreq>monthly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://rklimt.com/about</loc>
+  <loc>https://ryanklimt.me/about</loc>
   <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://rklimt.com/work</loc>
+  <loc>https://ryanklimt.me/work</loc>
   <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://rklimt.com/blog</loc>
+  <loc>https://ryanklimt.me/blog</loc>
   <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://rklimt.com/resume</loc>
+  <loc>https://ryanklimt.me/resume</loc>
   <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://rklimt.com/contact</loc>
+  <loc>https://ryanklimt.me/contact</loc>
   <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>

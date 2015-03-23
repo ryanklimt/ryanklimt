@@ -1,10 +1,10 @@
 <?php
 
-	if(stripos($_SERVER['SERVER_NAME'], 'rklimt.com') !== FALSE) {
-		$Database['Host'] = 'mysql1.000webhost.com';
-		$Database['Name'] = 'a6383143_rklimt';
-		$Database['User'] = 'a6383143_rklimt';
-		$Database['Pass'] = 'Ryanjohn64';
+	if(stripos($_SERVER['SERVER_NAME'], 'localhost') == FALSE) {
+		$Database['Host'] = 'ryanklimt.me.mysql';
+		$Database['Name'] = 'ryanklimt_me';
+		$Database['User'] = 'ryanklimt_me';
+		$Database['Pass'] = 'BEH5hmbK';
 	} else {
 		$Database['Host'] = 'localhost';
 		$Database['Name'] = 'test';
