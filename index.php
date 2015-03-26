@@ -5,7 +5,7 @@
 		include($filepath);
 	}
 
-	define('BASE_URL', $_SERVER['SERVER_NAME'] == 'localhost' ? 'http://localhost/rklimt/' : 'https://ryanklimt.me/');
+	define('BASE_URL', $_SERVER['SERVER_NAME'] == 'localhost' ? 'http://localhost/ryanklimt/' : 'https://ryanklimt.me/');
 	define('DEFAULT_HOME', 'home');
 	define('VIEW_PATH', 'views/');
 	define('LAYOUT_PATH', 'layouts/');

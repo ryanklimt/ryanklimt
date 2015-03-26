@@ -4,11 +4,12 @@
 			$_POST[$key] = trim($value);
 		}
 		$to = "ryanklimt@gmail.com";
-		$headers =  "From: ". htmlspecialchars($_POST["contact_name"]) . " <" . $_POST["contact_email"] . ">\r\n" .
-					"Reply-To: ". htmlspecialchars($_POST["contact_name"]) . " <" . $_POST["contact_email"] . ">\r\n" .
+		$headers =  "From: <ryan@ryanklimt.me>\r\n" .
+					"Reply-To: <ryan@ryanklimt.me>\r\n" .
 					"X-Mailer: PHP/" . phpversion();
-		$message =  $_POST["contact_name"]." says:\n\n" .
-					$_POST["contact_message"]."\n";
+		$message =  $_POST["contact_message"]."\n\n" .
+					$_POST["contact_name"]."\n" .
+					$_POST["contact_email"]."\n";
 		mail($to, "Ryan Klimt [Contact Form] from " . strip_tags(stripslashes($_POST["contact_name"])), strip_tags(stripslashes($message)), $headers);
 		unset($_POST);
 ?>
