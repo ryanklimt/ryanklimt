@@ -5,7 +5,7 @@
 	}
 	if(LogOut()) { ?>
 		<div class="flash-message">
-			<h2>Successfully logged out!</h2>
+			<h2>You have been successfully logged out!</h2>
 		</div>
 	<?php }
 ?>

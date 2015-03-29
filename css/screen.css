@@ -3261,6 +3261,10 @@ div#blog-form .post {
   width: 100%;
 }
 
+.deleteBlog {
+  float: right;
+}
+
 div#login-form {
   padding: 1.375em 0 0 0;
 }

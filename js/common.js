@@ -3,7 +3,8 @@ $(document).ready(function() {
 	fitText();
 	labelPlaceholders();
 	contactForm();
-	blogForm();
+	createBlogForm();
+	deleteBlogForm();
 	loginForm();
 	logoutForm();
 	var homeLoopTimeout;
@@ -84,7 +85,7 @@ function contactForm() {
 	})
 }
 
-function blogForm() {
+function createBlogForm() {
 	var blogForm = $('#blog-form form');
 	$(blogForm).validate({
 		messages: {
@@ -115,6 +116,32 @@ function blogForm() {
 			})
 		}
 	})
+}
+
+function deleteBlogForm() {
+	$('.deleteBlog').click(function() {
+		var thisObj = $(this);
+		$(thisObj).parent().siblings().fadeOut(300);
+		$(thisObj).parent().fadeOut(300, function() {
+			$(thisObj).parent().append('<div id="processing"><img src="images/loader.gif" alt="Processing..." width="32" height="32" /></div>');
+			$.ajax({
+				url: 'process/deleteblog.php',
+				type: 'POST',
+				data: {
+					'id': $(thisObj)[0].id
+				},
+				success: function(data) {
+					$('#processing').remove();
+					if(data) {
+						$(thisObj).parent().html(data).fadeIn(300);
+					} else {
+						$(thisObj).parent().fadeIn(300);
+						$(thisObj).parent().siblings().fadeIn(300);
+					}
+				}
+			})
+		})
+	});
 }
 
 function loginForm() {
@@ -157,7 +184,7 @@ function loginForm() {
 }
 
 function logoutForm() {
-	$('#logout').click(function(e) {
+	$('#logout').click(function() {
 		$('#content').children().fadeOut(300, function() {
 			$('#content').append('<div id="processing"><img src="images/loader.gif" alt="Processing..." width="32" height="32" /></div>');
 			$.ajax({

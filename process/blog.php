@@ -10,7 +10,7 @@
 					<h2><?php echo $_POST['blog_title']; ?></h2>
 					<p class="post-meta"><span>Posted on</span> <?php echo format_date(date('Y-m-d H:i:s')); ?> by Ryan Klimt</p>
 				</header>
-				<?php echo $_POST['blog_content']; ?>
+				<span><?php echo $_POST['blog_content']; ?></span>
 			</article>
 		<?php }
 	}

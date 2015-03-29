@@ -18,6 +18,10 @@
 		return Insert("blog", array('title' => $title, 'content' => $content));
 	}
 
+	function DeleteBlogPost($id) {
+		return Delete("blog", array('id' => $id));
+	}
+
 	function Login($email, $password) {
 		$resultsArray = Query("SELECT * FROM user", array('email' => $email, 'password' => sha1(md5($password))));
 		if($account = $resultsArray[0]) {

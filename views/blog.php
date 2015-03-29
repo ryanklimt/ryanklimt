@@ -23,10 +23,11 @@
 	<?php foreach($posts as $post) { if(isset($post['content'])) { ?>
 		<article class="post">
 			<header>
+				<?php if(IsLoggedIn()){ echo '<input type="submit" class="deleteBlog" id="'.$post['id'].'" value="Delete">'; } ?>
 				<h2><?php echo $post['title']; ?></h2>
 				<p class="post-meta"><span>Posted on</span> <?php echo format_date($post['date_posted']); ?> by Ryan Klimt</p>
 			</header>
-			<?php echo $post['content']; ?>
+			<span><?php echo $post['content']; ?></span>
 		</article>
 	<?php }} ?>
 	<?php if($nextPage) { ?>
