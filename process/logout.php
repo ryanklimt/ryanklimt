@@ -6,6 +6,6 @@
 	}
 
 	if(LogOut()) {
-		echo '<h2>Successfully logged out!</h2>';
+		echo '<h2 class="message">Successfully logged out!</h2>';
 	}
 ?>

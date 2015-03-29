@@ -108,6 +108,8 @@ function loginForm() {
 						$('#processing').remove();
 						if(data) {
 							$('#login-form').html(data).fadeIn(300);
+							$('.primary-nav ul').append('<li><a id="logout" style="display:none;">Logout</a></li>');
+							$('#logout').fadeIn(300);
 						} else {
 							$('#login-form form').fadeIn(300);
 						}
@@ -129,6 +131,7 @@ function logoutForm() {
 					$('#processing').remove();
 					if(data) {
 						$('#content').html(data).fadeIn(300);
+						$('#logout').fadeOut(300);
 					} else {
 						$('#content').children().fadeIn(300);
 					}
