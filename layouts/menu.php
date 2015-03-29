@@ -6,7 +6,6 @@
 		<li <?php echo is_current_page('blog', false); ?>><a href='blog'>Blog</a></li>
 		<li <?php echo is_current_page('resume', false); ?>><a href='resume'>Resume</a></li>
 		<li <?php echo is_current_page('contact', false); ?>><a href='contact'>Contact</a></li>
-		<li <?php echo is_current_page('login', false); ?>><a href='login'>Login</a></li>
 		<?php if(IsLoggedIn()) echo '<li><a id="logout">Logout</a></li>'; ?>
 	</ul>
 </nav>

@@ -110,6 +110,7 @@ function loginForm() {
 							$('#login-form').html(data).fadeIn(300);
 							$('.primary-nav ul').append('<li><a id="logout" style="display:none;">Logout</a></li>');
 							$('#logout').fadeIn(300);
+							logoutForm();
 						} else {
 							$('#login-form form').fadeIn(300);
 						}
