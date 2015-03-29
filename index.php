@@ -5,29 +5,24 @@
 		include($filepath);
 	}
 
-	define('BASE_URL', $_SERVER['SERVER_NAME'] == 'localhost' ? 'http://localhost/ryanklimt/' : 'https://ryanklimt.me/');
-	define('DEFAULT_HOME', 'home');
-	define('VIEW_PATH', 'views/');
-	define('LAYOUT_PATH', 'layouts/');
-
-	function isPage($filepath = null) {
+	function isPage($filepath=null) {
 		$filepath = VIEW_PATH . $filepath . '.php';
 		return file_exists($filepath) && is_file($filepath);
 	}
 
-	function getValidRoute($_route = array()) {
-		if (!$_route) {
+	function getValidRoute($_route=array()) {
+		if(!$_route) {
 			header('HTTP/1.1 404 Not Found');
 			header('Status: 404 Not Found');
 			return array('404');
 		} else {
 			$page = end($_route);
-			if ($page && in_array($page{0}, array('@','_','.','-',))) {
+			if($page && in_array($page{0}, array('@','_','.','-',))) {
 				array_pop($_route);
 				return getValidRoute($_route);
 			}
 		}
-		if ($_route && !isPage(implode('/', $_route))) {
+		if($_route && !isPage(implode('/', $_route))) {
 			array_pop($_route);
 			return getValidRoute($_route);
 		}
@@ -54,9 +49,7 @@
 
 	// LOAD CONTROLLER //
 	foreach(glob("controllers/*.php") as $filepath) {
-		if(preg_match('/'.$_view[0].'/',$filepath)) {
-			include($filepath);
-		}
+		if(preg_match('/'.$_view[0].'/',$filepath)) include($filepath);
 	}
 
 	include(LAYOUT_PATH.'inside.php');

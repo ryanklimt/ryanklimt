@@ -574,6 +574,16 @@ div#contact-form textarea {
 	max-width:95.402%;
 	width:95.402%;
 }
+div#login-form {
+	padding:1.375em 0 0 0;
+	li:last-child {
+		margin-bottom:0;
+	}
+}
+div#login-form input[type=email],
+div#login-form input[type=password] {
+	width:50%;
+}
 #site-footer {
 	border-top:1px solid $base-font-color;
 	clear:both;
@@ -744,9 +754,6 @@ div#contact-form textarea {
 		display:block;
 		float:none;
 		margin:0 auto;
-	}
-	#content {
-		float:none;
 	}
 	#content-secondary {
 		padding-top:1.375em;

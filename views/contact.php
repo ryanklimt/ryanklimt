@@ -23,7 +23,7 @@
 				</li>
 				<li class="label-placeholders">
 					<label for="contact-email">Email</label>
-					<input id="contact-email" class="required email" type="email" name="contact_email" value="">
+					<input id="contact-email" class="required" type="email" name="contact_email" value="">
 				</li>
 				<li class="label-placeholders">
 					<label for="contact-message">Your Message</label>
