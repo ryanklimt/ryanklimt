@@ -562,17 +562,28 @@ div#contact-form #processing img {
 	display:block;
 	margin:0 auto;
 }
-div#contact-form #contact-success {
-	width:100%;
-}
 div#contact-form input[type=text],
-div#contact-form input[type=email] {
+div#contact-form input[type=email],
+div#blog-form input[type=text] {
 	width:61.303%;
 }
-div#contact-form textarea {
+div#contact-form textarea,
+div#blog-form textarea  {
 	height:9.625em;
 	max-width:95.402%;
 	width:95.402%;
+}
+div#blog-form + .post {
+	border-top:1px solid $base-font-color;
+	margin-top:1.375em;
+	padding-top:2.75em;
+}
+div#blog-form .post {
+	border:none;
+	margin-bottom:-1.375em;
+}
+.flash-message {
+	width:100%;
 }
 div#login-form {
 	padding:1.375em 0 0 0;

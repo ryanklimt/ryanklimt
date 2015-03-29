@@ -3,6 +3,7 @@ $(document).ready(function() {
 	fitText();
 	labelPlaceholders();
 	contactForm();
+	blogForm();
 	loginForm();
 	logoutForm();
 	var homeLoopTimeout;
@@ -83,6 +84,39 @@ function contactForm() {
 	})
 }
 
+function blogForm() {
+	var blogForm = $('#blog-form form');
+	$(blogForm).validate({
+		messages: {
+			blog_title: "A title is required",
+			blog_content: "Some content is required"
+		},
+		invalidHandler: function() {
+			$(blogForm).addClass('error');
+		},
+		submitHandler: function(form) {
+			$(blogForm).append('<input type="hidden" name="ajax_submit" value="true" />');
+			$(blogForm).removeClass('error');
+			$(form).fadeOut(300, function() {
+				$('#blog-form').append('<div id="processing"><img src="images/loader.gif" alt="Processing..." width="32" height="32" /></div>');
+				$(form).ajaxSubmit({
+					url: 'process/blog.php',
+					type: 'POST',
+					data: blogForm.serialize(),
+					success: function(data) {
+						$('#processing').remove();
+						if(data) {
+							$('#blog-form').html(data).fadeIn(300);	
+						} else {
+							$(form).fadeIn(300);
+						}
+					}
+				})
+			})
+		}
+	})
+}
+
 function loginForm() {
 	var loginForm = $('#login-form form');
 	$(loginForm).validate({
@@ -91,6 +125,7 @@ function loginForm() {
 				required: "Your email address is required",
 				email: ""
 			},
+			login_password: "Your password is required"
 		},
 		invalidHandler: function() {
 			$(loginForm).addClass('error');

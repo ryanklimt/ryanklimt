@@ -1,11 +1,13 @@
 <?php
-	session_start();
-
-	foreach(glob('../includes/*.php') as $filepath) {
-		include($filepath);
-	}
-
-	if($_POST && Login($_POST['login_email'],$_POST['login_password'])) {
-		echo '<h2 class="message">Welcome '.$_SESSION['user']['username'].'!</h2>';
+	if($_POST) {
+		session_start();
+		foreach(glob('../includes/*.php') as $filepath) {
+			include($filepath);
+		}
+		if(Login($_POST['login_email'],$_POST['login_password'])) { ?>
+			<div class="flash-message">
+				<h2 class="message">Welcome <?php echo $_SESSION['user']['fname'].' '.$_SESSION['user']['lname']; ?>!</h2>
+			</div>
+		<?php }
 	}
 ?>

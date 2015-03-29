@@ -14,7 +14,7 @@
 		<p><strong>Gurnee, Illinois</strong><br>United States</p>
 	</div>
 	<div id="contact-form">
-		<form action='contact/'>
+		<form action='contact' method="post">
 			<h2>Send me a message</h2>
 			<ul class="form-structure">
 				<li class="label-placeholders">

@@ -1,7 +1,5 @@
-<?php print_r($_SESSION); ?>
-
 <div id="login-form">
-	<form action="login/">
+	<form action="login" method="post">
 		<ul class="form-structure">
 			<li class="label-placeholders">
 				<label for="login-email">Email</label>
