@@ -1,13 +1,13 @@
 <?php
 
-	if(stripos($_SERVER['SERVER_NAME'], 'localhost') == FALSE) {
-		$Database['Host'] = 'ryanklimt.me.mysql';
-		$Database['Name'] = 'ryanklimt_me';
-		$Database['User'] = 'ryanklimt_me';
-		$Database['Pass'] = 'BEH5hmbK';
-	} else {
+	$Database['Host'] = 'ryanklimt.me.mysql';
+	$Database['Name'] = 'ryanklimt_me';
+	$Database['User'] = 'ryanklimt_me';
+	$Database['Pass'] = 'BEH5hmbK';
+
+	if($_SERVER['SERVER_NAME'] == 'localhost') {
 		$Database['Host'] = 'localhost';
-		$Database['Name'] = 'test';
+		$Database['Name'] = 'ryanklimt_me';
 		$Database['User'] = 'root';
 		$Database['Pass'] = 'mysql';
 	}

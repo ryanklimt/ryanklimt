@@ -6,6 +6,7 @@
 		"blog" => "My Thoughts",
 		"resume" => "My Accomplishments",
 		"contact" => "Contact",
+		"login" => "Login",
 		"404" => "404 Error",
 	);
 ?>

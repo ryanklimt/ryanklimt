@@ -78,7 +78,6 @@
 </div>
 
 <div id="content-secondary" class="values">
-	
 	<div class="item">
 		<h2>Where I'm Based</h2>
 		<p>I'm based in the beautiful town of Gurnee, Illinois where I design websites for amazing clients worldwide.</p>

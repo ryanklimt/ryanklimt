@@ -2650,7 +2650,7 @@ label.dim {
   color: #E69999;
 }
 
-input[type=text], input[type=email], textarea, input[type=submit] {
+input[type=text], input[type=email], input[type=password], textarea, input[type=submit] {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;

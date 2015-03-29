@@ -11,6 +11,7 @@ $(document).ready(function () {
 	$(window).keydown(function(event){if(event.keyCode==84){$('.email-button').hide();$('.twitter-button').css('display','block');$('.team h2').html('Tweet me');}});
 	$(window).keyup(function(event){if(event.keyCode==84){$('.email-button').show();$('.twitter-button').hide();$('.team h2').html('Meet me');}});
 	$('textarea').autosize();
+	$('form').attr('autocomplete','off').attr('novalidate','novalidate');
 });
 
 function fitText() {
@@ -56,21 +57,19 @@ function contactForm() {
 		},
 		invalidHandler: function () {
 			$(contactForm).addClass('error');
-			$(contactForm).find('label:not(.error, [for=contact_url])').hide();
 		},
 		submitHandler: function (form) {
 			$(contactForm).append('<input type="hidden" name="ajax_submit" value="true" />');
 			$(contactForm).removeClass('error');
 			$(form).fadeOut(300, function () {
-				$("#contact-form").append('<div id="processing"><img src="images/loader.gif" alt="Processing..." width="32" height="32" /></div>');
+				$('#contact-form').append('<div id="processing"><img src="images/loader.gif" alt="Processing..." width="32" height="32" /></div>');
 				$(form).ajaxSubmit({
-					target: "#contact-form",
+					target: '#contact-form',
 					url: 'process/email.php',
 					type: 'POST',
 					data: contactForm.serialize(),
 					success: function () {
-						$('#contact_form').remove();
-						$("#processing").remove();
+						$('#processing').remove();
 					}
 				})
 			})
