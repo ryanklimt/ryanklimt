@@ -25,4 +25,10 @@
 	define('LAYOUT_PATH', 'layouts/');
 
 	date_default_timezone_set('America/Indianapolis');
+
+	define('HEAD_DESCRIPTION', 'Ryan Klimt, a freelance web developer specialising in beautiful website design and innovative development.');
+	define('HEAD_KEYWORDS', 'Ryan Klimt, rjk, freelance, freelance programmer, programmer, web development, web developer, web designer, front end developer, back end developer, computer science, klimt, rklimt, ryan klimt web developer, klimt web, klimt developer, klimt programmer');
+
+	define('TWITTER_HANDLE', '@ryanklimt');
+	define('GOOGLE_ANALYTICS', 'UA-42530522-1');
 ?>

@@ -15,10 +15,10 @@
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16 32x32">
 		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-114x114-precomposed.png">
 
-		<meta name="description" content="Ryan Klimt, a freelance web developer specialising in beautiful website design and innovative development.">
-		<meta name="keywords" content="Ryan Klimt, rjk, freelance, freelance programmer, programmer, web development, web developer, web designer, front end developer, back end developer, computer science, klimt, rklimt, ryan klimt web developer, klimt web, klimt developer, klimt programmer">
+		<meta name="description" content="<?php echo HEAD_DESCRIPTION; ?>">
+		<meta name="keywords" content="<?php echo HEAD_KEYWORDS; ?>">
 		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@ryanklimt">
+		<meta name="twitter:site" content="<?php echo TWITTER_HANDLE; ?>">
 	</head>
 		
 	<body class="<?php echo $_page_class; ?>">
@@ -35,6 +35,6 @@
 
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="js/ajax.form.min.js,modernizr.min.js,autosize.min.js,jquery.form.min.js,common.js"></script>
-		<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-42530522-1', 'auto');ga('send', 'pageview');</script>
+		<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', '<?php echo GOOGLE_ANALYTICS; ?>', 'auto');ga('send', 'pageview');</script>
 	</body>
 </html>
