@@ -1,9 +1,7 @@
 <?php
 	session_start();
 
-	foreach(glob("includes/*.php") as $filepath) {
-		include($filepath);
-	}
+	foreach(glob("includes/*.php") as $filepath) include($filepath);
 
 	function isPage($filepath=null) {
 		$filepath = VIEW_PATH . $filepath . '.php';
@@ -48,9 +46,7 @@
 	$_title = $seo[$_view_path];
 
 	// LOAD CONTROLLER //
-	foreach(glob("controllers/*.php") as $filepath) {
-		if(preg_match('/'.$_view[0].'/',$filepath)) include($filepath);
-	}
+	foreach(glob("controllers/*.php") as $filepath) if(preg_match('/'.$_view[0].'/',$filepath)) include($filepath);
 
 	include(LAYOUT_PATH.'inside.php');
 ?>
