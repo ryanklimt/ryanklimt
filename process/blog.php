@@ -1,9 +1,7 @@
 <?php
 	if($_POST) {
 		session_start();
-		foreach(glob('../includes/*.php') as $filepath) {
-			include($filepath);
-		}
+		foreach(glob('../includes/*.php') as $filepath) include($filepath);
 		if(IsLoggedIn() && CreateBlogPost($_POST['blog_title'], $_POST['blog_content'])) { ?>
 			<article class="post">
 				<header>
