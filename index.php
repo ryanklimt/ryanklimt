@@ -43,7 +43,8 @@
 	$_params = array_slice($_route, count($_view));
 	$_page = end($_view);
 	$_page_class = str_replace("/", "-",$_view_path);
-	$_title = $seo[$_view_path];
+	$_title = $seo[$_view_path][0];
+	$_description = $seo[$_view_path][1];
 
 	// LOAD CONTROLLER //
 	foreach(glob("controllers/*.php") as $filepath) if(preg_match('/'.$_view[0].'/',$filepath)) include($filepath);

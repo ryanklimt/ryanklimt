@@ -15,7 +15,7 @@
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16 32x32">
 		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-114x114-precomposed.png">
 
-		<meta name="description" content="<?php echo HEAD_DESCRIPTION; ?>">
+		<meta name="description" content="<?php echo $_description; ?>">
 		<meta name="keywords" content="<?php echo HEAD_KEYWORDS; ?>">
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="<?php echo TWITTER_HANDLE; ?>">
