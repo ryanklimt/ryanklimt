@@ -1,5 +1,5 @@
 <?php
-	$page = isset($_params[0]) && is_numeric($_params[0]) ? $_params[0] : 1;
+	$page = isset($_GET['page']) && is_numeric($_GET['page']) ? $_GET['page']: 1;
 	$perPage = 3;
 	$numPages = ceil(NumBlogPosts() / $perPage);
 
