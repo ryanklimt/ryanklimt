@@ -31,9 +31,9 @@
 		</article>
 	<?php }} ?>
 	<?php if($nextPage) { ?>
-		<div class="older_posts"><a href="blog/<?php echo $nextPage;?>">&#8592; Older posts</a></div>
+		<div class="older_posts"><a href="blog?page=<?php echo $nextPage;?>">&#8592; Older posts</a></div>
 	<?php } ?>
 	<?php if($previousPage) { ?>
-		<div class="newer_posts"><a href="blog/<?php echo $previousPage;?>">Newer posts &#8594;</a></div>
+		<div class="newer_posts"><a href="blog?page=<?php echo $previousPage;?>">Newer posts &#8594;</a></div>
 	<?php } ?>
 </div>
