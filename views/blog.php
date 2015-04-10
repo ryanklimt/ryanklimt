@@ -27,7 +27,7 @@
 				<h2><?php echo $post['title']; ?></h2>
 				<p class="post-meta"><span>Posted on</span> <?php echo format_date($post['date_posted']); ?> by Ryan Klimt</p>
 			</header>
-			<span><?php echo $post['content']; ?></span>
+			<span><?php echo nl2br($post['content']); ?></span>
 		</article>
 	<?php }} ?>
 	<?php if($nextPage) { ?>
