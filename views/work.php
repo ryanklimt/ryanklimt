@@ -29,8 +29,8 @@
 			<div class="app-features">
 				<h2>Download Now</h2>
 				<ul>
-					<li><a href="https://itunes.apple.com/us/app/tapsters/id911605505">iOS</a></li>
-					<li><a href="https://play.google.com/store/apps/details?id=com.codevomit.tapsterz">Goole Play</a></li>
+					<li><a href="https://itunes.apple.com/us/app/tapsters/id911605505" target="_blank">iOS</a></li>
+					<li><a href="https://play.google.com/store/apps/details?id=com.codevomit.tapsterz" target="_blank">Goole Play</a></li>
 				</ul>
 			</div>
 			<div class="app-stats">
@@ -74,9 +74,9 @@
 			<div class="app-features">
 				<h2>Download Now</h2>
 				<ul>
-					<li><a href="downloads/Mac.zip">Mac</a></li>
-					<li><a href="downloads/x64.zip">Windows x64</a></li>
-					<li><a href="downloads/x86.zip">Windows x86</a></li>
+					<li><a href="downloads/Mac.zip" target="_blank">Mac</a></li>
+					<li><a href="downloads/x64.zip" target="_blank">Windows x64</a></li>
+					<li><a href="downloads/x86.zip" target="_blank">Windows x86</a></li>
 				</ul>
 			</div>
 			<div class="app-stats">
@@ -109,7 +109,7 @@
 			<h2>MattMorseCode</h2>
 			<p>A beautiful portfolio website created for graphic designer Matthew Morse that holds the contents of hundreds of his pieces in a beautiful, well-thought out manner.</p>
 			<p>This site allows for an admin to login and add and remove images in multiple galleries.</p>
-			<p>The official MattMorseCode website can be visited <a href="http://mattmorsecode.com" target="_blank">here</a>.</p>
+			<p>The official Matthew Morse website can be visited <a href="http://matthewrmorse.com" target="_blank">here</a>.</p>
 		</div>
 		
 		<div class="app-points">
