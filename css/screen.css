@@ -2581,6 +2581,7 @@ html {
   background: transparent url(../images/html.jpg) left top repeat;
   border: 30px solid #2d2d2d;
   padding: 0 2.75em;
+  min-height: calc(100%@nbsp;-@nbsp;60px);
 }
 
 body {
@@ -2592,7 +2593,7 @@ body {
   line-height: 1.375em;
   background: transparent url(../images/loader.gif) center -400px no-repeat;
   margin: 2.75em auto 8.25em;
-  min-height: 990px;
+  min-height: 500px;
   max-width: 68.688em;
 }
 
