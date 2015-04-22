@@ -170,8 +170,8 @@ function loginForm() {
 						$('#processing').remove();
 						if(data) {
 							$('#login-form').html(data).fadeIn(300);
-							$('.primary-nav ul').append('<li><a id="logout" style="display:none;">Logout</a></li>');
-							$('#logout').fadeIn(300);
+							$('.primary-nav ul').append('<li><a class="logout" style="display:none;">Logout</a></li>');
+							$('.logout').fadeIn(300);
 							logoutForm();
 						} else {
 							$('#login-form form').fadeIn(300);
@@ -184,7 +184,7 @@ function loginForm() {
 }
 
 function logoutForm() {
-	$('#logout').click(function() {
+	$('.logout').click(function() {
 		$('#content').children().fadeOut(300, function() {
 			$('#content').append('<div id="processing"><img src="images/loader.gif" alt="Processing..." width="32" height="32" /></div>');
 			$.ajax({
@@ -194,7 +194,7 @@ function logoutForm() {
 					$('#processing').remove();
 					if(data) {
 						$('#content').html(data).fadeIn(300);
-						$('#logout').fadeOut(300);
+						$('.logout').fadeOut(300);
 					} else {
 						$('#content').children().fadeIn(300);
 					}
