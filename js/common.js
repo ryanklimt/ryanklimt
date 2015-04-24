@@ -169,11 +169,13 @@ function loginForm() {
 					success: function(data) {
 						$('#processing').remove();
 						if(data) {
-						    	window.location.replace("/blog");
-							/*$('#login-form').html(data).fadeIn(300);
+							$('#login-form').html(data).fadeIn(300);
 							$('.primary-nav ul').append('<li><a class="logout" style="display:none;">Logout</a></li>');
-							$('.logout').fadeIn(300);*/
+							$('.logout').fadeIn(300);
 							logoutForm();
+						    window.setTimeout(function(){
+						        window.location.href = "/blog";
+						    }, 3000);
 						} else {
 							$('#login-form form').fadeIn(300);
 						}
@@ -196,6 +198,9 @@ function logoutForm() {
 					if(data) {
 						$('#content').html(data).fadeIn(300);
 						$('.logout').fadeOut(300);
+					    window.setTimeout(function(){
+						    window.location.href = "/blog";
+						}, 3000);
 					} else {
 						$('#content').children().fadeIn(300);
 					}
