@@ -1,7 +1,7 @@
 <div id="social">
 	<div class="networks">
 		<ul>
-			<li class="twitter">Follow my Twitter <a href="http://twitter.com/ryanklimt" target="_blank">@ryanklimt</a></li>
+			<li class="twitter">Follow my Twitter <a href="http://twitter.com/ryanjklimt" target="_blank">@ryanklimt</a></li>
 			<li class="facebook">Check out my <a href="http://facebook.com/ryanklimt" target="_blank">Facebook page</a></li>
 		</ul>
 	</div>
