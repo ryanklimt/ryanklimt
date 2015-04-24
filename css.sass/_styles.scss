@@ -564,8 +564,7 @@ div#contact-form #processing img {
 	margin:0 auto;
 }
 div#contact-form input[type=text],
-div#contact-form input[type=email],
-div#blog-form input[type=text] {
+div#contact-form input[type=email] {
 	width:61.303%;
 }
 div#contact-form textarea,
@@ -596,7 +595,8 @@ div#login-form {
 	}
 }
 div#login-form input[type=email],
-div#login-form input[type=password] {
+div#login-form input[type=password],
+div#blog-form input[type=text] {
 	width:50%;
 }
 #site-footer {
