@@ -2560,7 +2560,7 @@ input[type=submit]:active {
 
 @media screen and (max-width: 1050px), (max-device-width: 1024px) {
   #archive .post {
-    padding-right: 0;
+    padding-right:0;
   }
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -3235,8 +3235,7 @@ div#contact-form #processing img {
 }
 
 div#contact-form input[type=text],
-div#contact-form input[type=email],
-div#blog-form input[type=text] {
+div#contact-form input[type=email] {
   width: 61.303%;
 }
 
@@ -3274,7 +3273,8 @@ div#login-form li:last-child {
 }
 
 div#login-form input[type=email],
-div#login-form input[type=password] {
+div#login-form input[type=password],
+div#blog-form input[type=text] {
   width: 50%;
 }
 
