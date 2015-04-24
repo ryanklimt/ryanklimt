@@ -169,9 +169,10 @@ function loginForm() {
 					success: function(data) {
 						$('#processing').remove();
 						if(data) {
-							$('#login-form').html(data).fadeIn(300);
+						    	window.location.replace("/blog");
+							/*$('#login-form').html(data).fadeIn(300);
 							$('.primary-nav ul').append('<li><a class="logout" style="display:none;">Logout</a></li>');
-							$('.logout').fadeIn(300);
+							$('.logout').fadeIn(300);*/
 							logoutForm();
 						} else {
 							$('#login-form form').fadeIn(300);
