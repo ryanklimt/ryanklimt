@@ -13,9 +13,21 @@
 		}
 		return $postArray;
 	}
+	
+	function GetBlogPost($url) {
+		$resultsArray = Query("SELECT * FROM blog", array('url' => $url));
+		$postArray = array();
+		if($resultsArray && isset($resultsArray[0])) {
+		    $postArray = $resultsArray[0];
+		}
+		return $postArray;
+	}
 
 	function CreateBlogPost($title, $content) {
-		return Insert("blog", array('title' => $title, 'content' => $content));
+		$url = strtolower($title);
+		$url = str_replace(' ','-',$url);
+		$url = preg_replace("/[^a-z-]/i", "", $url);
+		return Insert("blog", array('title' => $title, 'content' => $content, 'url' => $url));
 	}
 
 	function DeleteBlogPost($id) {
