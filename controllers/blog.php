@@ -6,10 +6,8 @@
 	if($page < 1) $page = 1;
 	if($page > $numPages) $page = $numPages;
 
-	$tmpValue = $page;
-
-	if($page > 0) $previousPage = $tmpValue-=1;
-	if($page < $numPages) $nextPage = $tmpValue+=2;
+	if($page > 0) $previousPage = $page-1;
+	if($page < $numPages) $nextPage = $page+1;
 
 	$posts = GetBlogPosts($page, $perPage);
 ?>
