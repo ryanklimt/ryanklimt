@@ -26,7 +26,7 @@
 
 	date_default_timezone_set('America/Indianapolis');
 
-	define('HEAD_KEYWORDS', 'Ryan Klimt, rjk, freelance, freelance programmer, programmer, web development, web developer, web designer, front end developer, back end developer, computer science, klimt, rklimt, ryan klimt web developer, klimt web, klimt developer, klimt programmer');
+	define('HEAD_KEYWORDS', 'Ryan Klimt, freelance, freelance programmer, programmer, web development, web developer, web designer, front end developer, back end developer, computer science, klimt, rklimt, ryan klimt web developer, klimt web, klimt developer, klimt programmer, web design portfolio, corporate website design, website design ideas, web agency, corporate web design, web design agency, freelance web developer, professional website, cool website designs, website layouts, cool web design, web design ideas, web page designers, website redesign, company website design, homepage design,  klimt web design');
 
 	define('TWITTER_HANDLE', '@ryanklimt');
 	define('GOOGLE_ANALYTICS', 'UA-42530522-1');
