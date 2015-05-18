@@ -1,7 +1,7 @@
 <?php
 	date_default_timezone_set('America/Indianapolis');
 	$allLinks = array();
-	$xml = simplexml_load_string(file_get_contents('http://www.reddit.com/r/wallpapers/top/.xml'));
+	$xml = simplexml_load_string(file_get_contents('http://www.reddit.com/r/wallpapers/top/.xml?sort=top&t=week'));
 	foreach($xml->channel->item as $images) {
 		$DOM = new DOMDocument;
 		$DOM->loadHTML($images->description);
