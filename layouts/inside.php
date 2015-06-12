@@ -6,7 +6,7 @@
 		<meta name="robots" content="robots.txt">
 		<meta name="author" content="humans.txt">
 		
-		<title>Ryan Klimt | <?php echo $_title; ?></title>
+		<title><?php echo $_title; ?></title>
 		<base href="<?php echo BASE_URL; ?>">
 
 		<link rel="stylesheet" href="css/screen.css" media="all" type="text/css">
