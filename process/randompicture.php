@@ -1,7 +1,7 @@
 <?php
 	date_default_timezone_set('America/Indianapolis');
 	$allLinks = array();
-	$xml = simplexml_load_string(file_get_contents('http://www.reddit.com/r/wallpapers/top/.xml?sort=top&t=week'));
+	$xml = simplexml_load_string(file_get_contents('http://www.reddit.com/r/wallpapers/top/.xml'));
 	foreach($xml->channel->item as $images) {
 		$DOM = new DOMDocument;
 		$DOM->loadHTML($images->description);
@@ -11,6 +11,7 @@
 		}
 	}
 	$chosenPhoto = $allLinks[date('d')%sizeof($allLinks)];
+	header('Cache-Control: max-age=3600');
 	header('Content-type: image/jpeg');
 	readfile($chosenPhoto);
 ?>
