@@ -26,12 +26,12 @@
 			<div class="skill-5"></div>
 			<h4>PHP</h4>
 			<div class="skill-4"></div>
+			<h4>WordPress</h4>
+			<div class="skill-5"></div>
 			<h4>CSS</h4>
 			<div class="skill-4"></div>
 			<h4>SASS</h4>
 			<div class="skill-4"></div>
-			<h4>Javascript</h4>
-			<div class="skill-3"></div>
 			<h4>jQuery</h4>
 			<div class="skill-4"></div>
 		</div>
@@ -54,7 +54,12 @@
 		
 		<div class="vacancy employment">
 			<h3>Employment</h3>
-			<h4>Skagga <em>2013 - Present</em></h4>
+			<h4><a href="http://idc-marketing.com" target="_blank">IDC Marketing</a> <em>2015 - Present</em></h4>
+			<ul>
+				<li>Lead web developer maintaining all client's sites</li>
+				<li>Performed duties of a basic IT dude</li>
+			</ul>
+			<h4><a href="http://skagga.com" target="_blank">Skagga</a> <em>2013 - 2014</em></h4>
 			<ul>
 				<li>Developed multiple websites with a team implementing new concepts.</li>
 				<li>Designed and coded websites using mobile-first strategies to make sites suitable for all devices.</li>
@@ -63,7 +68,7 @@
 				<li>Learned to work efficiently independently and in a group setting.</li>
 			</ul>
 			<h3>Education</h3>
-			<h4>Taylor University <em>2016</em></h4>
+			<h4><a href="http://taylor.edu" target="_blank">Taylor University</a> <em>2016</em></h4>
 			<p>B.S. Computer Science Systems with a Focus on Graphics and Artificial Intelligence</p>
 		</div>
 	</div>
