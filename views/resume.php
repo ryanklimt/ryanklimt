@@ -56,16 +56,21 @@
 			<h3>Employment</h3>
 			<h4><a href="http://idc-marketing.com" target="_blank">IDC Marketing</a> <em>2015 - Present</em></h4>
 			<ul>
-				<li>Lead web developer maintaining all client's sites</li>
-				<li>Performed duties of a basic IT dude</li>
+				<li>Collaborate closely with creative team to deliver content based, user-friendly websites</li>
+				<li>Utilize SEO methodologies to drive traffic to websites and optimize user experience</li>
+				<li>Establish presence for clients through various social media platforms</li>
+				<li>Manage and maintain multiple websites through the use of Git to track revisions</li>
 			</ul>
 			<h4><a href="http://skagga.com" target="_blank">Skagga</a> <em>2013 - 2014</em></h4>
 			<ul>
-				<li>Developed multiple websites with a team implementing new concepts.</li>
-				<li>Designed and coded websites using mobile-first strategies to make sites suitable for all devices.</li>
-				<li>Updated, revised, and maintained already built websites fixing bugs, redesigning, and implementing new features.</li>
-				<li>Generated backend code to support and strengthen a stable, well developed website.</li>
-				<li>Learned to work efficiently independently and in a group setting.</li>
+				<li>Develop multiple websites with a team implementing new concepts</li>
+				<li>Design and code websites using mobile-first strategies to make websites suitable for all devices</li>
+				<li>Update and maintain already built websites fixing bugs, redesigning, and implementing new features</li>
+				<li>Generate backend code to support and strengthen a stable, well developed website
+</li>
+				<li>Learn to work efficiently independently and in a group setting
+</li>
+				<li></li>
 			</ul>
 			<h3>Education</h3>
 			<h4><a href="http://taylor.edu" target="_blank">Taylor University</a> <em>2016</em></h4>
