@@ -5,8 +5,9 @@
 	$arr = preg_split('/https?:\/\/imgur.com\//', htmlspecialchars($file));
 	$count = 0;
 	foreach($arr as $str) {
-	    if($count > 0) {
-	        array_push($allLinks, "http://imgur.com/".substr($arr[$count], 0, 7).".jpg<br>");
+	    $link = substr($arr[$count], 0, 7);
+	    if($count > 0 && !strpos($link, '/')) {
+	        array_push($allLinks, "http://imgur.com/".$link.".jpg<br>");
 	    }
 	    $count++;
 	}
