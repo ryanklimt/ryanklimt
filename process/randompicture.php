@@ -1,5 +1,4 @@
 <?php
-	date_default_timezone_set('America/Indianapolis');
 	$allLinks = array();
 	foreach(simplexml_load_string(file_get_contents('https://www.reddit.com/r/wallpapers/top/.xml')) as $k) {
 		if(preg_match_all("/<a\s[^>]*href=(\"??)([^\" >]*?)\\1[^>]*>(.*)<\/a>/siU", $k->content, $matches) && (strpos($matches[2][2], '.jpg') || strpos($matches[2][2], '.jpeg') || strpos($matches[2][2], '.png'))) {
