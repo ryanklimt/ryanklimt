@@ -6,6 +6,10 @@
 		}
 	}
 	header('Cache-Control: max-age=1800');
-	header('Content-type: image/jpeg');
-	readfile($allLinks[date('d')%sizeof($allLinks)]);
+	if(isset($_GET['rss'])) {
+		header('Content-Type: application/rss+xml; charset=ISO-8859-1');
+	} else {
+		header('Content-type: image/jpeg');
+		readfile($allLinks[date('d')%sizeof($allLinks)]);
+	}
 ?>
