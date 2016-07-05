@@ -5,29 +5,9 @@
 			array_push($allLinks, $matches[2][2]);
 		}
 	}
-	header('Cache-Control: max-age=1800');
-	if(isset($_GET['rss'])) {
-	    header('Content-Type: application/xml');
-        $rssfeed = '<?xml version="1.0" encoding="UTF-8" ?>';
-        $rssfeed .= '<rss version="2.0">';
-        $rssfeed .= '<channel>';
-        $rssfeed .= '<title>Ryan Klimt Random Picture RSS Feed</title>';
-        $rssfeed .= '<link>https://theklimts.com</link>';
-        $rssfeed .= '<description>RSS feed generated from Reddit EarthPorn top wallpapers.</description>';
-        $rssfeed .= '<language>en-us</language>';
-        $rssfeed .= '<copyright>Copyright (C) '.date('Y').' Ryan Klimt</copyright>';
-        foreach($allLinks as $link) {
-            $rssfeed .= '<item>';
-            $rssfeed .= '<title>' . $link . '</title>';
-            $rssfeed .= '<link>' . $link . '</link>';
-            $rssfeed .= '<description><img src="' . $link . '" /></description>';
-            $rssfeed .= '</item>';
-        }
-        $rssfeed .= '</channel>';
-        $rssfeed .= '</rss>';
-        echo $rssfeed;
-	} else {
-		header('Content-type: image/jpeg');
-		readfile($allLinks[date('d')%sizeof($allLinks)]);
-	}
+	$url = $allLinks[date('d')%sizeof($allLinks)];
+	foreach(glob('../includes/*.php') as $filepath) include($filepath);
+	Insert('views', array('url' => $url, 'ip' => $_SERVER['REMOTE_ADDR']));
+	header('Content-type: image/jpeg');
+	readfile($url);
 ?>
