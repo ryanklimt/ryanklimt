@@ -5,9 +5,8 @@
 			array_push($allLinks, $matches[2][2]);
 		}
 	}
-	$url = $allLinks[date('d')%sizeof($allLinks)];
 	foreach(glob('../includes/*.php') as $filepath) include($filepath);
-	Insert('views', array('url' => $url, 'ip' => $_SERVER['REMOTE_ADDR']));
+	Insert('views', array('url' => $allLinks[date('d')%sizeof($allLinks)], 'ip' => $_SERVER['REMOTE_ADDR']));
 	header('Content-type: image/jpeg');
-	readfile($url);
+	readfile($allLinks[date('d')%sizeof($allLinks)]);
 ?>
