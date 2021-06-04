@@ -1,0 +1,67 @@
+
+# --------------------------------------------
+# Load the index.php first and foremost
+# --------------------------------------------
+
+DirectoryIndex index.php
+
+# --------------------------------------------
+# Expires Caching
+# --------------------------------------------
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType image/jpg "access 1 year"
+	ExpiresByType image/jpeg "access 1 year"
+	ExpiresByType image/gif "access 1 year"
+	ExpiresByType image/png "access 1 year"
+	ExpiresByType text/css "access 1 month"
+	ExpiresByType text/html "access 1 month"
+	ExpiresByType application/pdf "access 1 month"
+	ExpiresByType text/x-javascript "access 1 month"
+	ExpiresByType application/x-shockwave-flash "access 1 month"
+	ExpiresByType image/x-icon "access 1 year"
+	ExpiresDefault "access 1 month"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+
+	# ----------------------------------------
+	# No directory listings anywhere
+	# ----------------------------------------
+	IndexIgnore *
+	# Options +FollowSymLinks All -Indexes
+
+	# ----------------------------------------
+	# Compress & Gzip JS/CSS as one
+	# ----------------------------------------
+	RewriteRule ^css/(.*\.css) minify/combine.php?type=css&files=$1 [QSA,L]
+	RewriteRule ^js/(.*\.js) minify/combine.php?type=javascript&files=$1 [QSA,L]
+
+	# ----------------------------------------
+	# Hide php inside views & layouts & includes
+	# ----------------------------------------
+	RewriteRule ^views/(.*\.php) index.php [L]
+	RewriteRule ^layouts/(.*\.php) index.php [L]
+	RewriteRule ^includes/(.*\.php) index.php [L]
+	RewriteRule ^controllers/(.*\.php) index.php [L]
+
+	RewriteRule ^humans.txt humans.txt [L]
+	RewriteRule ^robots.txt robots.txt [L]
+
+	# ----------------------------------------
+	# Force https connection and remove www
+	# ----------------------------------------
+	RewriteCond %{HTTPS} off [OR]
+	RewriteCond %{HTTP_HOST} www.theklimts.com [NC]
+	RewriteRule (.*) https://theklimts.com/$1 [R=301,L]
+
+	# ----------------------------------------
+	# Route all requests to our framework
+	# ----------------------------------------
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule . index.php [L]
+
+</IfModule>
