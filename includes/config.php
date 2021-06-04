@@ -1,6 +1,6 @@
 <?php
 	$Database['Host'] = 'localhost';
-	$Database['Name'] = 'theklimts';
+	$Database['Name'] = 'ryanklimt';
 	$Database['User'] = '';
 	$Database['Pass'] = '';
 	
